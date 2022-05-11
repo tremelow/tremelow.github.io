@@ -1,1 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Publications | Léopold Trémant</title><link>https://tremelow.github.io/publication/</link><atom:link href="https://tremelow.github.io/publication/index.xml" rel="self" type="application/rss+xml"/><description>Publications</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 18 Jan 2022 18:47:42 +0100</lastBuildDate><image><url>https://tremelow.github.io/media/icon_hu2a081a79ddb63c71e8e2345ffe64836e_15919_512x512_fill_lanczos_center_3.png</url><title>Publications</title><link>https://tremelow.github.io/publication/</link></image><item><title>Averaging in a Nutshell</title><link>https://tremelow.github.io/publication/avg-nutshell/</link><pubDate>Tue, 18 Jan 2022 18:47:42 +0100</pubDate><guid>https://tremelow.github.io/publication/avg-nutshell/</guid><description/></item><item><title>Méthodes d’analyse asymptotique et d’approximation numérique</title><link>https://tremelow.github.io/publication/thesis/</link><pubDate>Wed, 08 Dec 2021 14:06:21 +0100</pubDate><guid>https://tremelow.github.io/publication/thesis/</guid><description/></item><item><title> A uniformly accurate numerical method for a class of dissipative systems</title><link>https://tremelow.github.io/publication/relax-mima/</link><pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate><guid>https://tremelow.github.io/publication/relax-mima/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Léopold Trémant</title>
+    <link>https://tremelow.github.io/publication/</link>
+      <atom:link href="https://tremelow.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 18 Jan 2022 18:47:42 +0100</lastBuildDate>
+    <image>
+      <url>https://tremelow.github.io/media/icon_hu2a081a79ddb63c71e8e2345ffe64836e_15919_512x512_fill_lanczos_center_3.png</url>
+      <title>Publications</title>
+      <link>https://tremelow.github.io/publication/</link>
+    </image>
+    
+    <item>
+      <title>Averaging in a Nutshell</title>
+      <link>https://tremelow.github.io/publication/avg-nutshell/</link>
+      <pubDate>Tue, 18 Jan 2022 18:47:42 +0100</pubDate>
+      <guid>https://tremelow.github.io/publication/avg-nutshell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Méthodes d’analyse asymptotique et d’approximation numérique</title>
+      <link>https://tremelow.github.io/publication/thesis/</link>
+      <pubDate>Wed, 08 Dec 2021 14:06:21 +0100</pubDate>
+      <guid>https://tremelow.github.io/publication/thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> A uniformly accurate numerical method for a class of dissipative systems</title>
+      <link>https://tremelow.github.io/publication/relax-mima/</link>
+      <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/publication/relax-mima/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

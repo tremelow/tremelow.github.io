@@ -1,1 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Publication_types | Léopold Trémant</title><link>https://tremelow.github.io/publication_types/</link><atom:link href="https://tremelow.github.io/publication_types/index.xml" rel="self" type="application/rss+xml"/><description>Publication_types</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 18 Jan 2022 18:47:42 +0100</lastBuildDate><image><url>https://tremelow.github.io/media/icon_hu2a081a79ddb63c71e8e2345ffe64836e_15919_512x512_fill_lanczos_center_3.png</url><title>Publication_types</title><link>https://tremelow.github.io/publication_types/</link></image></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication_types | Léopold Trémant</title>
+    <link>https://tremelow.github.io/publication_types/</link>
+      <atom:link href="https://tremelow.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publication_types</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 18 Jan 2022 18:47:42 +0100</lastBuildDate>
+    <image>
+      <url>https://tremelow.github.io/media/icon_hu2a081a79ddb63c71e8e2345ffe64836e_15919_512x512_fill_lanczos_center_3.png</url>
+      <title>Publication_types</title>
+      <link>https://tremelow.github.io/publication_types/</link>
+    </image>
+    
+  </channel>
+</rss>

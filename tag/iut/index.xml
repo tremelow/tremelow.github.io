@@ -17,8 +17,7 @@
       <link>https://tremelow.github.io/project/pisano-tp/</link>
       <pubDate>Wed, 11 May 2022 08:20:42 +0200</pubDate>
       <guid>https://tremelow.github.io/project/pisano-tp/</guid>
-      <description>&lt;!-- [Lien vers le PDF du sujet](&lt; ref &#34;OL2_TP_bonus_2021.pdf&#34; &gt;) --&gt;
-&lt;p&gt;Ce sujet est inspiré d&amp;rsquo;une superbe &lt;a href=&#34;https://www.youtube.com/watch?v=o1eLKODSCqw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vidéo de Jacob Yatsko&lt;/a&gt; dans laquelle les nombres de Fibonacci modulo $p \in \mathbb{N}^*$ sont placés sur un cercle.
+      <description>&lt;p&gt;Ce sujet (PDF ci-dessus) est inspiré d&amp;rsquo;une superbe &lt;a href=&#34;https://www.youtube.com/watch?v=o1eLKODSCqw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;vidéo de Jacob Yatsko&lt;/a&gt; dans laquelle les nombres de Fibonacci modulo $p \in \mathbb{N}^*$ sont placés sur un cercle.
 À partir d&amp;rsquo;un certain rang (qui dépend de $p$), la suite est périodique; ce rang est appelé période de Pisano.
 L&amp;rsquo;objectif du TP est de reproduire cette visualisation sur le cercle avec Scilab.&lt;/p&gt;
 &lt;p&gt;Étant donné que le sujet s&amp;rsquo;adresse aux élèves en fin de première année de formation GEII à l&amp;rsquo;IUT, la notion de modulo n&amp;rsquo;est pas supposée connue, donc elle est présentée rapidement.

@@ -29,9 +29,17 @@
 
   
   
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
 
   
   
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
   
 
   
@@ -52,7 +60,7 @@
   
     
   
-  <meta name="description" content="Ce sujet (PDF ci-dessus) est inspiré d&rsquo;une superbe vidéo de Jacob Yatsko dans laquelle les nombres de Fibonacci modulo $p \in \mathbb{N}^*$ sont placés sur un cercle. À partir d&rsquo;un certain rang (qui dépend de $p$), la suite est périodique; ce rang est appelé période de Pisano." />
+  <meta name="description" content="Sujet inspiré d&#39;une vidéo de Jacob Yatsko qui propose une visualisation des nombres de Fibonacci modulo $p$ sur le cercle. L&#39;objectif est de reproduire cette visualisation en Scilab. Ce sujet a été proposé en fin de première année pour la formation GEII de l&#39;IUT de Rennes en 2021." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://tremelow.github.io/project/pisano-tp/" />
@@ -243,7 +251,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.67183ad5d9fc42133bc8f9e8a14742f9.css" />
+  <link rel="stylesheet" href="/css/wowchemy.fdeb09e237052632e0ec72f95561ab57.css" />
 
   
 
@@ -282,7 +290,6 @@
   
   
     
-    
   
   
 
@@ -291,13 +298,13 @@
     
     
   
-  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Léopold Trémant" />
   <meta property="og:url" content="https://tremelow.github.io/project/pisano-tp/" />
   <meta property="og:title" content="TP: Visualisation de la période de Pisano | Léopold Trémant" />
-  <meta property="og:description" content="Ce sujet (PDF ci-dessus) est inspiré d&rsquo;une superbe vidéo de Jacob Yatsko dans laquelle les nombres de Fibonacci modulo $p \in \mathbb{N}^*$ sont placés sur un cercle. À partir d&rsquo;un certain rang (qui dépend de $p$), la suite est périodique; ce rang est appelé période de Pisano." /><meta property="og:image" content="https://tremelow.github.io/media/icon_hu2a081a79ddb63c71e8e2345ffe64836e_15919_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://tremelow.github.io/media/icon_hu2a081a79ddb63c71e8e2345ffe64836e_15919_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="Sujet inspiré d&#39;une vidéo de Jacob Yatsko qui propose une visualisation des nombres de Fibonacci modulo $p$ sur le cercle. L&#39;objectif est de reproduire cette visualisation en Scilab. Ce sujet a été proposé en fin de première année pour la formation GEII de l&#39;IUT de Rennes en 2021." /><meta property="og:image" content="https://tremelow.github.io/project/pisano-tp/featured.jpg" />
+    <meta property="twitter:image" content="https://tremelow.github.io/project/pisano-tp/featured.jpg" /><meta property="og:locale" content="en-us" />
   
     
       <meta
@@ -331,6 +338,10 @@
   },
   "headline": "TP: Visualisation de la période de Pisano",
   
+  "image": [
+    "https://tremelow.github.io/project/pisano-tp/featured.jpg"
+  ],
+  
   "datePublished": "2022-05-11T08:20:42+02:00",
   "dateModified": "2022-05-11T08:20:42+02:00",
   
@@ -347,7 +358,7 @@
       "url": "https://tremelow.github.io/media/icon_hu2a081a79ddb63c71e8e2345ffe64836e_15919_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Ce sujet (PDF ci-dessus) est inspiré d\u0026rsquo;une superbe vidéo de Jacob Yatsko dans laquelle les nombres de Fibonacci modulo $p \\in \\mathbb{N}^*$ sont placés sur un cercle. À partir d\u0026rsquo;un certain rang (qui dépend de $p$), la suite est périodique; ce rang est appelé période de Pisano."
+  "description": "Sujet inspiré d'une vidéo de Jacob Yatsko qui propose une visualisation des nombres de Fibonacci modulo $p$ sur le cercle. L'objectif est de reproduire cette visualisation en Scilab. Ce sujet a été proposé en fin de première année pour la formation GEII de l'IUT de Rennes en 2021."
 }
 </script>
 
@@ -378,7 +389,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.2539a3058b6536055b0f14f7d5f9df7b.js"></script>
+  <script src="/js/wowchemy-init.min.7e85d6cfe81caeb57cc49452f9b55e03.js"></script>
 
   
 
@@ -570,6 +581,23 @@
 
         
         
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
 
         
         
@@ -599,18 +627,25 @@
 
 
 
-  
+
+
+
+
+
+
+
+
 
   
   
-  
+
+
 <div class="article-container pt-3">
   <h1>TP: Visualisation de la période de Pisano</h1>
 
   
 
   
-    
 
 
 <div class="article-metadata">
@@ -654,7 +689,7 @@
 
 </div>
 
-    
+  
 
 
 
@@ -697,7 +732,14 @@
 </div>
 
 
-  
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 378px;">
+  <div style="position: relative">
+    <img src="/project/pisano-tp/featured_hu60ee93d8bfaa5e00381e7f4366bd1569_56933_720x2500_fit_q75_h2_lanczos.webp" width="720" height="378" alt="" class="featured-image">
+    
+  </div>
 </div>
 
 

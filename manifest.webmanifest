@@ -2,8 +2,8 @@
   "name": "Léopold Trémant",
   "short_name": "Léopold Trémant",
   "lang": "en-us",
-  "theme_color": "#1565c0",
-  "background_color": "#1565c0",
+  "theme_color": "#ff3860",
+  "background_color": "#ff3860",
   "icons": [{
     "src": "/media/icon_hu2a081a79ddb63c71e8e2345ffe64836e_15919_192x192_fill_lanczos_center_3.png",
     "sizes": "192x192",

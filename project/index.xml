@@ -5,12 +5,21 @@
     <link>https://tremelow.github.io/project/</link>
       <atom:link href="https://tremelow.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 11 May 2022 08:20:42 +0200</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Sep 2023 08:00:03 +0200</lastBuildDate>
     <image>
       <url>https://tremelow.github.io/media/icon_hu2a081a79ddb63c71e8e2345ffe64836e_15919_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>https://tremelow.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>Introduction aux méthodes num pour EDPs en Julia</title>
+      <link>https://tremelow.github.io/project/intro-num-edp-jl/</link>
+      <pubDate>Fri, 15 Sep 2023 08:00:03 +0200</pubDate>
+      <guid>https://tremelow.github.io/project/intro-num-edp-jl/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;TP0-Poisson.pdf&#34;&gt;TP0 - Poisson&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>TP: Visualisation de la période de Pisano</title>

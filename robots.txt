@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://tremelow.github.io/sitemap.xml

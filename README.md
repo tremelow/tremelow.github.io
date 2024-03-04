@@ -1,2 +1,0 @@
-# tremelow.github.io
-My personal website

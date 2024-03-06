@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A gentle introduction to backward error analysis on Léopold Trémant</title>
-    <link>https://tremelow.github.io/blog/backward-error-analysis/</link>
+    <link>http://localhost:1313/blog/backward-error-analysis/</link>
     <description>Recent content in A gentle introduction to backward error analysis on Léopold Trémant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://tremelow.github.io/blog/backward-error-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/backward-error-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear backward error analysis</title>
-      <link>https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/</link>
+      <link>http://localhost:1313/blog/backward-error-analysis/02-linear-bea/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/</guid>
+      <guid>http://localhost:1313/blog/backward-error-analysis/02-linear-bea/</guid>
       <description>This post assumes you know the base idea behind backward error analysis.</description>
     </item>
     <item>
       <title>Motivating backward error analysis</title>
-      <link>https://tremelow.github.io/blog/backward-error-analysis/01-motivating-bea/</link>
+      <link>http://localhost:1313/blog/backward-error-analysis/01-motivating-bea/</link>
       <pubDate>Wed, 28 Feb 2024 21:29:05 +0100</pubDate>
-      <guid>https://tremelow.github.io/blog/backward-error-analysis/01-motivating-bea/</guid>
+      <guid>http://localhost:1313/blog/backward-error-analysis/01-motivating-bea/</guid>
       <description>There are two main areas in backward error analysis (b.</description>
     </item>
   </channel>

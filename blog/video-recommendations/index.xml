@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Video recommendations on Léopold Trémant</title>
-    <link>http://localhost:1313/blog/video-recommendations/</link>
+    <link>https://tremelow.github.io/blog/video-recommendations/</link>
     <description>Recent content in Video recommendations on Léopold Trémant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 04 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/video-recommendations/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tremelow.github.io/blog/video-recommendations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daria Ivanova - Affording a planet with geometry</title>
-      <link>http://localhost:1313/blog/video-recommendations/2024-03-04-dewdrop-planet/</link>
+      <link>https://tremelow.github.io/blog/video-recommendations/2024-03-04-dewdrop-planet/</link>
       <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/video-recommendations/2024-03-04-dewdrop-planet/</guid>
+      <guid>https://tremelow.github.io/blog/video-recommendations/2024-03-04-dewdrop-planet/</guid>
       <description>For my first video recommendation, it seemed obvious to me to spotlight Daria Ivanova&amp;rsquo;s SoME3 submission.</description>
     </item>
   </channel>

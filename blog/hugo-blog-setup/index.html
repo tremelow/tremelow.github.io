@@ -97,8 +97,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tremelow.github.io/blog/hugo-blog-setup/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2024-03-05T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-03-05T00:00:00+00:00" />
-
+<meta property="article:modified_time" content="2024-03-17T00:00:00+00:00" />
 
   <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Making my website using Hugo"/>
 <meta name="twitter:description" content="This website is generated from Markdown using Hugo and the Congo theme!"/>
@@ -123,12 +122,12 @@
     "dateCreated": "2024-03-05T00:00:00\u002b00:00",
     "datePublished": "2024-03-05T00:00:00\u002b00:00",
     
-    "dateModified": "2024-03-05T00:00:00\u002b00:00",
+    "dateModified": "2024-03-17T00:00:00\u002b00:00",
     
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "849"
+    "wordCount": "866"
   }
   </script>
 
@@ -510,7 +509,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2024-03-05 00:00:00 &#43;0000 UTC">5 March 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+      <time datetime="2024-03-05 00:00:00 &#43;0000 UTC">5 March 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
     
 
     
@@ -616,11 +615,17 @@ This means that after cloning this repo, you should run use <code>git clone --re
 <li>Preview on footnote hover (thanks to 
 <a href="https://blog.securecloudops.com/post/doc-footnote-preview/" target="_blank" rel="noreferrer">1</a> 
 <a href="https://github.com/aidenlx/better-fn" target="_blank" rel="noreferrer">2</a>), which still needs work</li>
+<li>Added a parameter <code>reverseChronological</code> to avoid chronological order</li>
 </ul>
 <p>All these modifications are visible either in <code>assets</code> or <code>layouts</code>.</p>
 <h2 id="to-do" class="relative group">To-do <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#to-do" aria-label="Anchor">#</a></span></h2><p>There are many things I&rsquo;m still not satisfied with at the moment, which I&rsquo;ll hopefully tackle eventually.</p>
 <ul>
-<li><input disabled="" type="checkbox"> Blog section should present every post on the list page, topics should get flattened (users can click on breadcrumbs to get back to a topic summary)</li>
+<li><input disabled="" type="checkbox"> Blog homepage
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Flatten subsections to present every post on the list page (users can click on breadcrumbs to get back to a topic summary)</li>
+<li><input disabled="" type="checkbox"> Display parent topic if the post is part of a series</li>
+</ul>
+</li>
 <li><input disabled="" type="checkbox"> Callout boxes
 <ul>
 <li><input disabled="" type="checkbox"> Fix weird offset when it contains a list</li>
@@ -638,7 +643,7 @@ This means that after cloning this repo, you should run use <code>git clone --re
 <li><input disabled="" type="checkbox"> &ldquo;Cite&rdquo; button for publications, to make the Bibtex appear</li>
 <li><input disabled="" type="checkbox"> Dark / Light colour theme
 <ul>
-<li><input disabled="" type="checkbox"> Post-process TikZ images to fit with the theme (graft the post-process of 
+<li><input checked="" disabled="" type="checkbox"> Post-process TikZ images to fit with the theme (graft the post-process of 
 <a href="https://github.com/artisticat1/obsidian-tikzjax/" target="_blank" rel="noreferrer">Obsidian TikZ</a> with the 
 <a href="https://github.com/bill-ion/tikzjax" target="_blank" rel="noreferrer">most recent</a> or 
 <a href="https://github.com/benrbray/tikzjax" target="_blank" rel="noreferrer">most visible</a> fork, as motivated by this 

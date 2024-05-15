@@ -6,8 +6,15 @@
     <description>Recent content in Video recommendations on Léopold Trémant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tremelow.github.io/blog/video-recommendations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mihai Nica - Alice HH vs Bob HT</title>
+      <link>https://tremelow.github.io/blog/video-recommendations/2024-05-17-hh-vs-ht/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/blog/video-recommendations/2024-05-17-hh-vs-ht/</guid>
+      <description>A video popped up in my feed this week.</description>
+    </item>
     <item>
       <title>Nemean - Fast Inverse Square Root — A Quake III Algorithm</title>
       <link>https://tremelow.github.io/blog/video-recommendations/2024-03-18-inverse-sqrt/</link>

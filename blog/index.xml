@@ -4,23 +4,30 @@
     <title>Blog posts on Léopold Trémant</title>
     <link>https://tremelow.github.io/blog/</link>
     <description>Recent content in Blog posts on Léopold Trémant</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tremelow.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction au deep learning</title>
+      <link>https://tremelow.github.io/blog/introduction_deep_learning/</link>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/blog/introduction_deep_learning/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Making my website using Hugo</title>
       <link>https://tremelow.github.io/blog/hugo-blog-setup/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://tremelow.github.io/blog/hugo-blog-setup/</guid>
-      <description>This website is generated from Markdown using Hugo and the Congo theme!</description>
+      <description></description>
     </item>
     <item>
       <title>TP: Visualisation de la période de Pisano</title>
       <link>https://tremelow.github.io/blog/tp-pisano/</link>
       <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
       <guid>https://tremelow.github.io/blog/tp-pisano/</guid>
-      <description>Ce sujet PDF est inspiré d’une superbe vidéo de Jacob Yatsko dans laquelle les nombres de Fibonacci modulo \(p \in \mathbb{N}^*\) sont placés sur un cercle.</description>
+      <description></description>
     </item>
   </channel>
 </rss>

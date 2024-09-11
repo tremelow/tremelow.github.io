@@ -4,7 +4,7 @@
     <title>Enseignement on Léopold Trémant</title>
     <link>https://tremelow.github.io/categories/enseignement/</link>
     <description>Recent content in Enseignement on Léopold Trémant</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 11 May 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tremelow.github.io/categories/enseignement/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://tremelow.github.io/blog/tp-pisano/</link>
       <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
       <guid>https://tremelow.github.io/blog/tp-pisano/</guid>
-      <description>Ce sujet PDF est inspiré d’une superbe vidéo de Jacob Yatsko dans laquelle les nombres de Fibonacci modulo \(p \in \mathbb{N}^*\) sont placés sur un cercle.</description>
+      <description></description>
     </item>
   </channel>
 </rss>

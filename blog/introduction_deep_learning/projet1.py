@@ -49,7 +49,7 @@ def build_loss(slope_vals, bias_vals, x, y, vectorized=False):
     if vectorized:
         y_pred = slope_vals[None, :] * x[..., None, None] + bias_vals[:, None]
         loss = (y_pred - y[..., None, None]) ** 2
-        while loss.shape > 2:
+        while len(loss.shape) > 2:
             loss = np.mean(loss, axis=0)
     else:
         loss_fun = nn.MSELoss()  # instanciation de la MSE

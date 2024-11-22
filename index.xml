@@ -6,8 +6,15 @@
     <description>Recent content in Website of Léopold Trémant on Léopold Trémant</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tremelow.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Équations différentielles stochastiques et modèles de diffusion (groupe de travail)</title>
+      <link>https://tremelow.github.io/blog/gdt-eds-lml/</link>
+      <pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/blog/gdt-eds-lml/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Introduction au deep learning</title>
       <link>https://tremelow.github.io/blog/introduction_deep_learning/</link>

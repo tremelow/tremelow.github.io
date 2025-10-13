@@ -15,7 +15,7 @@
 ><head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="rgb(255,255,255)" />
+  <meta name="theme-color" content="#FFFFFF" />
   
   <title>Linear backward error analysis &middot; Léopold Trémant</title>
     <meta name="title" content="Linear backward error analysis &middot; Léopold Trémant" />
@@ -26,8 +26,8 @@
   
   <script
     type="text/javascript"
-    src="/js/appearance.min.022d0ebc3b46a335eb1c7ef79b7f2de143d7cd5156d433638592ef1ce5f8554e.js"
-    integrity="sha256-Ai0OvDtGozXrHH73m38t4UPXzVFW1DNjhZLvHOX4VU4="
+    src="https://tremelow.github.io/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
   ></script>
   
   
@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.ce0fd55dff00d5ee3b33eb91412f97ebccaa8799b9ff086886c42b395101f81a.css"
-    integrity="sha256-zg/VXf8A1e47M&#43;uRQS&#43;X68yqh5m5/whohsQrOVEB&#43;Bo="
+    href="https://tremelow.github.io/css/main.bundle.min.419c08c90febf1eea3856dc0a2f6546a7f0412aa16d78ee78ae918dcd9d4ee63.css"
+    integrity="sha256-QZwIyQ/r8e6jhW3AovZUan8EEqoW147niukY3NnU7mM="
   />
   
   
@@ -59,7 +59,7 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="/js/main.bundle.min.d4b727caf411cb5c3b421d0d427ed1e3daeafe0d04840327efad4978430edb8c.js"
+      src="https://tremelow.github.io/js/main.bundle.min.d4b727caf411cb5c3b421d0d427ed1e3daeafe0d04840327efad4978430edb8c.js"
       integrity="sha256-1LcnyvQRy1w7Qh0NQn7R49rq/g0EhAMn761JeEMO24w="
       data-copy="Copy"
       data-copied="Copied"
@@ -77,7 +77,9 @@
   
   
   
-  <link rel="canonical" href="https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/" />
+  
+    <link rel="canonical" href="https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/" />
+  
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -133,10 +135,44 @@
     "wordCount": "1656"
   }
   </script>
-
+    
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "https://tremelow.github.io/",
+       "name": "Website of Léopold Trémant",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://tremelow.github.io/blog/",
+       "name": "Blog Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://tremelow.github.io/blog/backward-error-analysis/",
+       "name": "A Gentle Introduction to Backward Error Analysis",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Linear Backward Error Analysis",
+       "position": 4
+     }
+   ]
+ }
+  </script>
 
   
-  <meta name="author" content="Léopold Trémant" />
+  
+    <meta name="author" content="Léopold Trémant" />
+  
   
     
       <link href="https://github.com/tremelow" rel="me" />
@@ -170,22 +206,22 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/lib/katex/katex.min.7c7c1a59e6eec00ecd485e5083f69fe14783c7d5ea52962938682e6e8df25aef9bd88411e14790c1b6f8d938bb81502336d56823f23d4c4a187aef689b0702ea.css"
-    integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu&#43;b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g=="
+    href="/lib/katex/katex.min.7e7e35e3ef02b7b437449a44ca3fac62ec1ed39cb8312b680a00fe8ac60badc95b063b694636b8440856f7f5e8c2cc9e6b0efb581179b2656c7e1e97558c7096.css"
+    integrity="sha512-fn414&#43;8Ct7Q3RJpEyj&#43;sYuwe05y4MStoCgD&#43;isYLrclbBjtpRja4RAhW9/Xowsyeaw77WBF5smVsfh6XVYxwlg=="
   />
   
   
   <script
     defer
-    src="/lib/katex/katex.min.2d037120c479ad7bfba3e6f597cf8dd4464c7e11bb88567d1e19db2644e9e338cdaf95afb2def902a51e143c5e4546bb979bc40f2522022a7ffebf8414b2c2c8.js"
-    integrity="sha512-LQNxIMR5rXv7o&#43;b1l8&#43;N1EZMfhG7iFZ9HhnbJkTp4zjNr5Wvst75AqUeFDxeRUa7l5vEDyUiAip//r&#43;EFLLCyA=="
+    src="/lib/katex/katex.min.cadd45c1af1f44bdaf196dc9b104f1daeb29043f0dc59155ffe22847510a04390a0b7a859400d420a626204f7fc5ddb07c19311de1c66b25e19c2559d3e126a8.js"
+    integrity="sha512-yt1Fwa8fRL2vGW3JsQTx2uspBD8NxZFV/&#43;IoR1EKBDkKC3qFlADUIKYmIE9/xd2wfBkxHeHGayXhnCVZ0&#43;EmqA=="
   ></script>
   
   
   <script
     defer
-    src="/lib/katex/auto-render.min.8968ae052e67b7aafad1f0b3dba35dd19a9ed276e4d594c841b9772afee462c5fec8a314147ce3687dbe02733abe9d97b3e80d99a0405562634a6b8fc3be847e.js"
-    integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX&#43;yKMUFHzjaH2&#43;AnM6vp2Xs&#43;gNmaBAVWJjSmuPw76Efg=="
+    src="/lib/katex/auto-render.min.e9b2833d28623d18c071d78ef13e9c79d695122d296af3dbcee7bf1bf6518b0565bab59939267fbc8f5faf696193c20f5caef3e7501969cfb306f6738032730d.js"
+    integrity="sha512-6bKDPShiPRjAcdeO8T6cedaVEi0pavPbzue/G/ZRiwVlurWZOSZ/vI9fr2lhk8IPXK7z51AZac&#43;zBvZzgDJzDQ=="
     onload="renderMathInElement(document.body);"
   ></script>
   
@@ -317,13 +353,14 @@
   
   
   
+  
 
 
   
   
 </head>
 <body
-    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral"
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
   >
     <div id="the-top" class="absolute flex self-center">
       <a
@@ -335,7 +372,7 @@
     </div>
     
     
-      <header class="py-6 font-semibold text-neutral-900 print:hidden sm:py-10 dark:text-neutral">
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
   <nav class="flex items-start justify-between sm:items-center">
     
     <div class="z-40 flex flex-row items-center">
@@ -376,7 +413,7 @@
                   
                     <a
                       href="/about/"
-                      title=""
+                      title="About me"
                       onclick="close_menu()"
                       
                       ><span
@@ -393,7 +430,7 @@
                   
                     <a
                       href="/work/"
-                      title=""
+                      title="Publications"
                       onclick="close_menu()"
                       
                       ><span
@@ -410,7 +447,7 @@
                   
                     <a
                       href="/blog/"
-                      title=""
+                      title="Blog posts"
                       onclick="close_menu()"
                       
                       ><span
@@ -462,11 +499,81 @@
                   
                     
                     
+  
+    
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">EN</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >Français</a
+                    >
+                  
+                </div>
+              
+            
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >English<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
                   
                 </li>
               
-                
-                  
               
             
           </ul>
@@ -481,7 +588,7 @@
               
                 <a
                   href="/about/"
-                  title=""
+                  title="About me"
                   
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -497,7 +604,7 @@
               
                 <a
                   href="/work/"
-                  title=""
+                  title="Publications"
                   
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -513,7 +620,7 @@
               
                 <a
                   href="/blog/"
-                  title=""
+                  title="Blog posts"
                   
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -564,11 +671,81 @@
               
                 
                 
+  
+    
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">EN</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >Français</a
+                    >
+                  
+                </div>
+              
+            
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >English<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
               
             </li>
           
-            
-              
           
 
         
@@ -584,7 +761,7 @@
   <article>
     <header class="max-w-prose">
       
-        <ol class="text-sm text-neutral-500 print:hidden dark:text-neutral-400">
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
   
   
     
@@ -596,7 +773,7 @@
   <li class="hidden inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="/"
+      href="https://tremelow.github.io/"
       >Website of Léopold Trémant</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -605,7 +782,7 @@
   <li class=" inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="/blog/"
+      href="https://tremelow.github.io/blog/"
       >Blog posts</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -614,7 +791,7 @@
   <li class=" inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="/blog/backward-error-analysis/"
+      href="https://tremelow.github.io/blog/backward-error-analysis/"
       >A gentle introduction to backward error analysis</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -623,7 +800,7 @@
   <li class="hidden inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="/blog/backward-error-analysis/02-linear-bea/"
+      href="https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/"
       >Linear backward error analysis</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -690,11 +867,11 @@
           <div class="toc pe-5 print:hidden lg:sticky lg:top-10">
             <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
   <summary
-    class="-ms-5 block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 lg:hidden dark:bg-neutral-700 dark:text-neutral-100"
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
   >
     Table of Contents
   </summary>
-  <div class="-ms-5 border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
     <li><a href="#explicit-euler">Explicit Euler</a>
@@ -790,7 +967,7 @@ Then applying the Euler method with time-step \(h\) to the problem in \(v_h\) pr
 
   
   
-  <figure>
+  <figure class="mx-auto my-0 rounded-md">
     
       
       
@@ -815,12 +992,12 @@ Then applying the Euler method with time-step \(h\) to the problem in \(v_h\) pr
     
     
     
-    <picture >
+    <picture  class="mx-auto my-0 rounded-md" >
       <img
-        src="/blog/backward-error-analysis/02-linear-bea/linear-bea-convergence.svg"
+        src="https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/linear-bea-convergence.svg"
         width="576"
         height="273.6"
-        
+        class="mx-auto my-0 rounded-md"
         
         loading="lazy" decoding="async"
       />
@@ -846,7 +1023,7 @@ $$ \dot{u} = \Lambda u, \qquad \Lambda = J := \begin{pmatrix} 0 &amp; -1 \ 1 &am
 
   
   
-  <figure>
+  <figure class="mx-auto my-0 rounded-md">
     
       
       
@@ -871,12 +1048,12 @@ $$ \dot{u} = \Lambda u, \qquad \Lambda = J := \begin{pmatrix} 0 &amp; -1 \ 1 &am
     
     
     
-    <picture >
+    <picture  class="mx-auto my-0 rounded-md" >
       <img
-        src="/blog/backward-error-analysis/02-linear-bea/linear-bea-convergence.svg"
+        src="https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/linear-bea-convergence.svg"
         width="576"
         height="273.6"
-        
+        class="mx-auto my-0 rounded-md"
         
         loading="lazy" decoding="async"
       />
@@ -891,8 +1068,7 @@ $$ \dot{u} = \Lambda u, \qquad \Lambda = J := \begin{pmatrix} 0 &amp; -1 \ 1 &am
   </figure>
 
 
-<h2 id="application-to-other-schemes" class="relative group">Application to other schemes <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#application-to-other-schemes" aria-label="Anchor">#</a></span></h2><p>This result may be extended to any standard Runge-Kutta method in a fairly straightforward manner using the stability function. For a method of 
-<a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods#Implicit_Runge%E2%80%93Kutta_methods" target="_blank" rel="noreferrer">Butcher tableau</a> \(\begin{array}{c|c} c &amp; A \\ \hline &amp; b^{\sf T} \end{array}\) the stability function is given by the formula<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>
+<h2 id="application-to-other-schemes" class="relative group">Application to other schemes <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#application-to-other-schemes" aria-label="Anchor">#</a></span></h2><p>This result may be extended to any standard Runge-Kutta method in a fairly straightforward manner using the stability function. For a method of <a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods#Implicit_Runge%E2%80%93Kutta_methods" target="_blank" rel="noreferrer">Butcher tableau</a> \(\begin{array}{c|c} c &amp; A \\ \hline &amp; b^{\sf T} \end{array}\) the stability function is given by the formula<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>
 $$
 r(z) = 1 + z b^{\sf T} (\mathrm{id} - zA)^{-1} \mathbb{1}
 $$
@@ -1016,8 +1192,7 @@ The computations become much more complex, and in general these series are purel
 <p>I won&rsquo;t discuss infinite dimension, i.e. PDEs, because everything is always more complicated for PDEs.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
-<p>In the multi-dimensional case \(\dot u = \Lambda u\), we may use the notation \(\ln(\mathrm{id} + h\Lambda) = \sum\limits_{n \geq 1} \frac{(-1)^{n+1}}{n}(h \Lambda)^n\), valid for \(h |\Lambda| &lt; 1\). For other cases, see for instance 
-<a href="https://en.wikipedia.org/wiki/Logarithm_of_a_matrix" target="_blank" rel="noreferrer">the Wikipedia page</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>In the multi-dimensional case \(\dot u = \Lambda u\), we may use the notation \(\ln(\mathrm{id} + h\Lambda) = \sum\limits_{n \geq 1} \frac{(-1)^{n+1}}{n}(h \Lambda)^n\), valid for \(h |\Lambda| &lt; 1\). For other cases, see for instance <a href="https://en.wikipedia.org/wiki/Logarithm_of_a_matrix" target="_blank" rel="noreferrer">the Wikipedia page</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3">
 <p>See e.g. E. Hairer, G. Wanner, <em>Solving ordinary differential equations II. Stiff and Differential-Algebraic Problems</em> (1996) &ndash; Sec. IV.3&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
@@ -1045,7 +1220,7 @@ The computations become much more complex, and in general these series are purel
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="group flex" href="/blog/backward-error-analysis/01-motivating-bea/">
+            <a class="group flex" href="https://tremelow.github.io/blog/backward-error-analysis/01-motivating-bea/">
               <span
                 class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
                 ><span class="ltr:inline rtl:hidden">&larr;</span
@@ -1077,19 +1252,23 @@ The computations become much more complex, and in general these series are purel
     </footer>
   </article>
 
-        
-          <div class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12">
-            <a
-              href="#the-top"
-              class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-              aria-label="Scroll to top"
-              title="Scroll to top"
-            >
-              &uarr;
-            </a>
-          </div>
-        
-      </main><footer class="py-10 print:hidden">
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
   
   
   <div class="flex items-center justify-between">
@@ -1098,7 +1277,7 @@ The computations become much more complex, and in general these series are purel
       
         <p class="text-sm text-neutral-500 dark:text-neutral-400">
             &copy;
-            2024
+            2025
             Léopold Trémant
         </p>
       

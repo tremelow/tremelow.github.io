@@ -1,125 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
+  <sitemap>
+    <loc>https://tremelow.github.io/en/sitemap.xml</loc>
     
-      <url>
-            <loc>https://tremelow.github.io/blog/</loc>
-            <lastmod>2024-11-22T00:00:00+00:00</lastmod>
-          </url>
+      <lastmod>2024-11-22T00:00:00+00:00</lastmod>
     
+  </sitemap>
   
+  <sitemap>
+    <loc>https://tremelow.github.io/fr/sitemap.xml</loc>
     
-      <url>
-            <loc>https://tremelow.github.io/blog/gdt-eds-lml/</loc>
-            <lastmod>2024-11-22T00:00:00+00:00</lastmod>
-          </url>
+      <lastmod>2024-11-22T00:00:00+00:00</lastmod>
     
+  </sitemap>
   
-    
-      <url>
-            <loc>https://tremelow.github.io/</loc>
-            <lastmod>2024-11-22T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/blog/introduction_deep_learning/</loc>
-            <lastmod>2024-09-11T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/blog/video-recommendations/2024-05-17-hh-vs-ht/</loc>
-            <lastmod>2024-05-15T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/blog/video-recommendations/2024-03-18-inverse-sqrt/</loc>
-            <lastmod>2024-03-18T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/blog/video-recommendations/2024-03-11-geometric-algebra/</loc>
-            <lastmod>2024-03-11T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/blog/hugo-blog-setup/</loc>
-            <lastmod>2024-03-17T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/blog/video-recommendations/2024-03-04-dewdrop-planet/</loc>
-            <lastmod>2024-03-04T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/blog/video-recommendations/</loc>
-            <lastmod>2024-03-04T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/</loc>
-            <lastmod>2024-03-01T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/blog/backward-error-analysis/01-motivating-bea/</loc>
-            <lastmod>2024-02-28T21:29:05+01:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/blog/backward-error-analysis/</loc>
-            <lastmod>2024-02-28T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/blog/tp-pisano/</loc>
-            <lastmod>2022-05-11T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/about/</loc>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/work/</loc>
-          </url>
-    
-  
-</urlset>
+</sitemapindex>

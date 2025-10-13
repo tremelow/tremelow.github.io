@@ -1,0 +1,954 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="fr"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>[EN] Making my website using Hugo &middot; Léopold Trémant</title>
+    <meta name="title" content="[EN] Making my website using Hugo &middot; Léopold Trémant" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="https://tremelow.github.io/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://tremelow.github.io/css/main.bundle.min.419c08c90febf1eea3856dc0a2f6546a7f0412aa16d78ee78ae918dcd9d4ee63.css"
+    integrity="sha256-QZwIyQ/r8e6jhW3AovZUan8EEqoW147niukY3NnU7mM="
+  />
+  
+  
+  
+  
+    
+    
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="https://tremelow.github.io/js/main.bundle.min.d4b727caf411cb5c3b421d0d427ed1e3daeafe0d04840327efad4978430edb8c.js"
+      integrity="sha256-1LcnyvQRy1w7Qh0NQn7R49rq/g0EhAMn761JeEMO24w="
+      data-copy="Copier"
+      data-copied="Copié"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="https://tremelow.github.io/fr/blog/hugo-blog-setup/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://tremelow.github.io/fr/blog/hugo-blog-setup/">
+  <meta property="og:site_name" content="Léopold Trémant">
+  <meta property="og:title" content="[EN] Making my website using Hugo">
+  <meta property="og:locale" content="fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-03-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-03-17T00:00:00+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="[EN] Making my website using Hugo">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Articles de blog",
+    "name": "[EN] Making my website using Hugo",
+    "headline": "[EN] Making my website using Hugo",
+    
+    
+    "inLanguage": "fr",
+    "url" : "https:\/\/tremelow.github.io\/fr\/blog\/hugo-blog-setup\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Léopold Trémant"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-03-05T00:00:00\u002b00:00",
+    "datePublished": "2024-03-05T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-03-17T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "866"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "https://tremelow.github.io/fr/",
+       "name": "Site Personnel De Léopold Trémant",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://tremelow.github.io/fr/blog/",
+       "name": "Articles De Blog",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "[ En] Making My Website Using Hugo",
+       "position": 3
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Léopold Trémant" />
+  
+  
+    
+      <link href="https://github.com/tremelow" rel="me" />
+    
+      <link href="https://scholar.google.com/citations?user=B1MDQ-0AAAAJ" rel="me" />
+    
+      <link href="https://orcid.org/0000-0002-0512-4286" rel="me" />
+    
+  
+  
+  
+
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="/lib/footnote/footnote.f03f23c119c4b71fde9b0201233d8261c411221bff58253306fdd6480bc05c609b0c351b6414643bafd388832fb8b995a10ed27fb87d707bce00d8553f0804fe.css"
+  integrity="sha512-8D8jwRnEtx/emwIBIz2CYcQRIhv/WCUzBv3WSAvAXGCbDDUbZBRkO6/TiIMvuLmVoQ7Sf7h9cHvOANhVPwgE/g=="
+/>
+
+
+<script
+  defer
+  src="/lib/footnote/initFootnoteTooltip.2ee0c0803c48d1204d78affde68efb544e6d094df2d2062b77266e66126564a2639187d4eb55d456193a91607c4e6e6b8449788596badd29bde2a1240b9d5ef6.js"
+  integrity="sha512-LuDAgDxI0SBNeK/95o77VE5tCU3y0gYrdyZuZhJlZKJjkYfU61XUVhk6kWB8Tm5rhEl4hZa63Sm94qEkC51e9g=="
+></script>
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Aller au contenu</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="z-40 flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/fr/"
+    >Léopold Trémant</a
+  >
+
+    </div>
+    
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/fr/about/"
+                      title="À propos"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >à propos</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/fr/work/"
+                      title="Publications"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >travaux</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/fr/blog/"
+                      title="Articles de blog"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >blog</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    <button
+                      id="appearance-switcher-1"
+                      type="button"
+                      aria-label="appearance switcher"
+                    >
+                      <span
+                        class="group-dark:hover:text-primary-400 inline transition-colors group-hover:text-primary-600 dark:hidden"
+                        title="Passer au thème sombre"
+                      >
+                        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </span>
+                      <span
+                        class="group-dark:hover:text-primary-400 hidden transition-colors group-hover:text-primary-600 dark:inline"
+                        title="Passer au thème clair"
+                      >
+                        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </span>
+                    </button>
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+  
+    
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">FR</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/fr/blog/hugo-blog-setup/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >Français<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/blog/hugo-blog-setup/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >English</a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
+                  
+                </li>
+              
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/fr/about/"
+                  title="À propos"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >à propos</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/fr/work/"
+                  title="Publications"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >travaux</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/fr/blog/"
+                  title="Articles de blog"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >blog</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                <button
+                  id="appearance-switcher-2"
+                  type="button"
+                  aria-label="appearance switcher"
+                >
+                  <span
+                    class="group-dark:hover:text-primary-400 inline transition-colors group-hover:text-primary-600 dark:hidden"
+                    title="Passer au thème sombre"
+                  >
+                    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </span>
+                  <span
+                    class="group-dark:hover:text-primary-400 hidden transition-colors group-hover:text-primary-600 dark:inline"
+                    title="Passer au thème clair"
+                  >
+                    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </span>
+                </button>
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                
+  
+    
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">FR</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/fr/blog/hugo-blog-setup/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >Français<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/blog/hugo-blog-setup/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >English</a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
+              
+            </li>
+          
+          
+
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://tremelow.github.io/fr/"
+      >Site personnel de Léopold Trémant</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class=" inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://tremelow.github.io/fr/blog/"
+      >Articles de blog</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://tremelow.github.io/fr/blog/hugo-blog-setup/"
+      >[EN] Making my website using Hugo</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        [EN] Making my website using Hugo
+      </h1>
+      
+        <div class="mb-12 mt-8 text-base text-neutral-500 print:hidden dark:text-neutral-400">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2024-03-05 00:00:00 &#43;0000 UTC">5 mars 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Temps de lecture">5 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 print:hidden lg:sticky lg:top-10">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Sommaire
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-hugo">Why Hugo?</a></li>
+    <li><a href="#how-hugo">How Hugo?</a>
+      <ul>
+        <li><a href="#choosing-a-theme">Choosing a theme</a></li>
+        <li><a href="#using-a-theme">Using a theme</a></li>
+        <li><a href="#the-project-structure">The project structure</a></li>
+      </ul>
+    </li>
+    <li><a href="#my-customisation-of-congo">My customisation of Congo</a></li>
+    <li><a href="#to-do">To-do</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        
+        <p>This website is generated from Markdown using <a href="https://gohugo.io/" target="_blank" rel="noreferrer">Hugo</a> and the <a href="https://jpanther.github.io/congo/" target="_blank" rel="noreferrer">Congo</a> theme! Here&rsquo;s how I set it up.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h2 id="why-hugo" class="relative group">Why Hugo? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#why-hugo" aria-label="Ancre">#</a></span></h2><ul>
+<li>converts from Markdown, my note-taking &ldquo;language&rdquo; of choice</li>
+<li>large database of themes and examples</li>
+<li>fairly intuitive, template based</li>
+<li>recommended by a friend :)</li>
+</ul>
+<p>Also, everyone says Hugo is fast. As it is the only static site generator<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> I&rsquo;ve ever used, I can&rsquo;t comment on this, but my site has never taken more than a couple of seconds to build. This is great when iterating on designs.</p>
+<h2 id="how-hugo" class="relative group">How Hugo? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-hugo" aria-label="Ancre">#</a></span></h2><h3 id="choosing-a-theme" class="relative group">Choosing a theme <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#choosing-a-theme" aria-label="Ancre">#</a></span></h3><p>I ended up choosing <a href="https://jpanther.github.io/congo/" target="_blank" rel="noreferrer">Congo</a> for my theme, for a few reasons.</p>
+<ol>
+<li>multi-page</li>
+<li>full of features but still fairly minimalist</li>
+<li>seemingly well documented through the example site, with accessible code</li>
+<li>customisable using (some) Tailwind CSS</li>
+<li>callout boxes! (though they still need some work)</li>
+<li>table of contents in blog posts</li>
+</ol>
+<h3 id="using-a-theme" class="relative group">Using a theme <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#using-a-theme" aria-label="Ancre">#</a></span></h3><p>Congo suggests 3 ways to import the theme. I chose the second, import it as a git submodule.</p>
+<ul>
+<li>updates are easier than naive download (see tutorial in example site)</li>
+<li>easy access to the example site (go to the <code>exampleSite</code> folder and execute <code>hugo server --themesDir ../..</code>)</li>
+<li>no risk of having Hugo delete the cache and having to redownload the theme</li>
+</ul>
+<blockquote>
+<p>[!warning]
+This means that after cloning this repo, you should run use <code>git clone --recursive</code>, or follow the standard cloning with <code>git submodule update --init themes/congo</code> before building the website!</p></blockquote>
+<p>My previous website used <a href="https://github.com/HugoBlox/theme-academic-cv" target="_blank" rel="noreferrer">Academic</a> by WowChemy / HugoBlox, but it was too closed off for me. I like the original approach of Hugo with snippets and modularity, while with HugoBlox, anything outside of the box was inaccessible. With Congo, I was able to tweak and modify a lot of things on my own.</p>
+<h3 id="the-project-structure" class="relative group">The project structure <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-project-structure" aria-label="Ancre">#</a></span></h3><p>I have a private git repo with the source,<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> which I work on using <code>hugo server</code>. Once a blog post or modification is finished, I just run <code>hugo</code> which generates the website files in a <code>public</code> folder. This folder is linked to <a href="https://github.com/tremelow/tremelow.github.io" target="_blank" rel="noreferrer">another git repo</a>, which is synced to the website with <a href="https://pages.github.com/" target="_blank" rel="noreferrer">Github Pages</a>.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> I just have to do</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;&lt;date of update&gt;&#34;</span>
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></div><p>and we&rsquo;re all set! The website gets updated almost immediately.</p>
+<p>Maybe importing the website as a submodule would also work, and it would make it appear in the online repo nicely, but this way works fine for me.</p>
+<h2 id="my-customisation-of-congo" class="relative group">My customisation of Congo <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#my-customisation-of-congo" aria-label="Ancre">#</a></span></h2><ul>
+<li>Standard customisation
+<ul>
+<li>leaves for publications and &ldquo;about&rdquo; page</li>
+<li>storing PDFs of publications in <code>static/&lt;leaf name&gt;</code> (in my case, <code>&lt;leaf name&gt;</code> is <code>work</code>)</li>
+<li>Enabled the light/dark button and <code>header.layout = hybrid</code> (see <a href="https://jpanther.github.io/congo/docs/getting-started/#action-links" target="_blank" rel="noreferrer">the Congo docs</a>)</li>
+</ul>
+</li>
+<li>Allowed custom alt text for the profile picture to give proper credit to <a href="https://atelier-marmo.myportfolio.com/" target="_blank" rel="noreferrer">Marie Morin</a></li>
+<li>Imported some icons from FontAwesome (fixed for dark mode, <code>&lt;path d=...&gt;</code> should be <code>&lt;path fill=&quot;currentColor&quot; d=...&gt;</code>)</li>
+<li>Imported a TikZJax script by <a href="https://github.com/benrbray/tikzjax" target="_blank" rel="noreferrer">benrbray</a></li>
+<li>Modified <code>badge</code> to allow <code>href</code> in it (because <code>button</code> was too clunky)</li>
+<li>Preview on footnote hover (thanks to <a href="https://blog.securecloudops.com/post/doc-footnote-preview/" target="_blank" rel="noreferrer">1</a> <a href="https://github.com/aidenlx/better-fn" target="_blank" rel="noreferrer">2</a>), which still needs work</li>
+<li>Added a parameter <code>reverseChronological</code> to avoid chronological order</li>
+</ul>
+<p>All these modifications are visible either in <code>assets</code> or <code>layouts</code>.</p>
+<h2 id="to-do" class="relative group">To-do <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#to-do" aria-label="Ancre">#</a></span></h2><p>There are many things I&rsquo;m still not satisfied with at the moment, which I&rsquo;ll hopefully tackle eventually.</p>
+<ul>
+<li><input disabled="" type="checkbox"> Blog homepage
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Flatten subsections to present every post on the list page (users can click on breadcrumbs to get back to a topic summary)</li>
+<li><input disabled="" type="checkbox"> Display parent topic if the post is part of a series</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> Callout boxes
+<ul>
+<li><input disabled="" type="checkbox"> Fix weird offset when it contains a list</li>
+<li><input disabled="" type="checkbox"> Make them foldable and give them a potential title (maybe using <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank" rel="noreferrer"><code>&lt;details&gt;</code></a>)</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> Footnotes
+<ul>
+<li><input disabled="" type="checkbox"> preview/tooltip even on mobile</li>
+<li><input disabled="" type="checkbox"> fix position when the footnote is at the edge of the content</li>
+<li><input disabled="" type="checkbox"> fit width to content of footnote hover</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> &ldquo;Cite&rdquo; button for publications, to make the Bibtex appear</li>
+<li><input disabled="" type="checkbox"> Dark / Light colour theme
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Post-process TikZ images to fit with the theme (graft the post-process of <a href="https://github.com/artisticat1/obsidian-tikzjax/" target="_blank" rel="noreferrer">Obsidian TikZ</a> with the <a href="https://github.com/bill-ion/tikzjax" target="_blank" rel="noreferrer">most recent</a> or <a href="https://github.com/benrbray/tikzjax" target="_blank" rel="noreferrer">most visible</a> fork, as motivated by this <a href="https://stackoverflow.com/questions/77758813/how-to-use-tikz-libraries-in-tikzjax" target="_blank" rel="noreferrer">StackOverflow answer</a>)</li>
+<li><input disabled="" type="checkbox"> Different images depending on theme (reading list: <a href="https://ahelwer.ca/post/2023-04-06-dark-mode/" target="_blank" rel="noreferrer">1</a> <a href="https://stenbrinke.nl/blog/adding-support-for-dark-and-light-images-to-hugo-figure-shortcode/" target="_blank" rel="noreferrer">2</a> <a href="https://zerovip.github.io/en/15738/" target="_blank" rel="noreferrer">3</a>)</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> My own colour theme</li>
+<li><input disabled="" type="checkbox"> Colour to indicate current section in navigation bar (maybe superfluous with breadcrumbs) and/or position in Table of contents</li>
+<li><input disabled="" type="checkbox"> Automatic conversion from Obsidian to Hugo syntax (maybe with <a href="https://amethyst.bencuan.me/" target="_blank" rel="noreferrer">Amethyst</a>?)</li>
+<li><input disabled="" type="checkbox"> Enable comments (see <a href="https://gohugo.io/content-management/comments/" target="_blank" rel="noreferrer">the Hugo docs</a>)</li>
+<li><input disabled="" type="checkbox"> Improve icons support using e.g. <a href="https://hugo-mods.github.io/blog/icons/" target="_blank" rel="noreferrer">the Icons module</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>This is <strong>not</strong> a tutorial, what I&rsquo;ve written is very sparse, and gets into the very specific details I spent time on <em>despite reading tutorials.</em>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>I&rsquo;ve also read good things about <a href="https://www.getzola.org/" target="_blank" rel="noreferrer">Zola</a> <a href="https://mrkaran.dev/posts/migrating-to-zola/" target="_blank" rel="noreferrer">here</a> and <a href="https://astro.build/" target="_blank" rel="noreferrer">Astro</a> <a href="https://onebite.dev/hugo-vs-astro-which-static-site-generator-to-choose-in-2023/" target="_blank" rel="noreferrer">here</a>. The former uses a similar syntax to Hugo, but I&rsquo;ve not yet faced issues with the unfortunate &ldquo;magic&rdquo; of Hugo which Zola supposedly prevents. The latter targets devs familiar with JavaScript and/or other website generator, which I&rsquo;m not. Personally, I&rsquo;d rather <del>steal from</del> use the large database of themes and examples for Hugo than tinker for days myself.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>My source is actually public <a href="https://github.com/tremelow/congo-website" target="_blank" rel="noreferrer">here</a>, since I wanted the changes I made to the theme to be freely available. In the future, I plan on following <a href="https://stackoverflow.com/questions/7983204/having-a-private-branch-of-a-public-repo-on-github" target="_blank" rel="noreferrer">this StackOverflow guide</a> to separate between my drafts and my public modifications.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>The Gitlab of most labs and universities have this feature too, nowadays! The CNRS webpage hosting does as well.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="https://tremelow.github.io/fr/blog/video-recommendations/2024-03-04-dewdrop-planet/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Daria Ivanova - Affording a planet with geometry</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-03-04 00:00:00 &#43;0000 UTC">4 mars 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="https://tremelow.github.io/fr/blog/video-recommendations/2024-03-11-geometric-algebra/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >sudgylacmoe -  A Swift Introduction to Geometric Algebra </span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-03-11 00:00:00 &#43;0000 UTC">11 mars 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Faire défiler jusqu&#39;au bas de la page"
+            title="Faire défiler jusqu&#39;au bas de la page"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            &copy;
+            2025
+            Léopold Trémant
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Propulsé par <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
+</footer>
+
+    </div>
+  </body>
+</html>

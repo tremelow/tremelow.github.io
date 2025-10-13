@@ -15,7 +15,7 @@
 ><head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="rgb(255,255,255)" />
+  <meta name="theme-color" content="#FFFFFF" />
   
   <title>Making my website using Hugo &middot; Léopold Trémant</title>
     <meta name="title" content="Making my website using Hugo &middot; Léopold Trémant" />
@@ -26,8 +26,8 @@
   
   <script
     type="text/javascript"
-    src="/js/appearance.min.022d0ebc3b46a335eb1c7ef79b7f2de143d7cd5156d433638592ef1ce5f8554e.js"
-    integrity="sha256-Ai0OvDtGozXrHH73m38t4UPXzVFW1DNjhZLvHOX4VU4="
+    src="https://tremelow.github.io/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
   ></script>
   
   
@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.ce0fd55dff00d5ee3b33eb91412f97ebccaa8799b9ff086886c42b395101f81a.css"
-    integrity="sha256-zg/VXf8A1e47M&#43;uRQS&#43;X68yqh5m5/whohsQrOVEB&#43;Bo="
+    href="https://tremelow.github.io/css/main.bundle.min.419c08c90febf1eea3856dc0a2f6546a7f0412aa16d78ee78ae918dcd9d4ee63.css"
+    integrity="sha256-QZwIyQ/r8e6jhW3AovZUan8EEqoW147niukY3NnU7mM="
   />
   
   
@@ -59,7 +59,7 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="/js/main.bundle.min.d4b727caf411cb5c3b421d0d427ed1e3daeafe0d04840327efad4978430edb8c.js"
+      src="https://tremelow.github.io/js/main.bundle.min.d4b727caf411cb5c3b421d0d427ed1e3daeafe0d04840327efad4978430edb8c.js"
       integrity="sha256-1LcnyvQRy1w7Qh0NQn7R49rq/g0EhAMn761JeEMO24w="
       data-copy="Copy"
       data-copied="Copied"
@@ -77,7 +77,9 @@
   
   
   
-  <link rel="canonical" href="https://tremelow.github.io/blog/hugo-blog-setup/" />
+  
+    <link rel="canonical" href="https://tremelow.github.io/blog/hugo-blog-setup/" />
+  
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -133,10 +135,37 @@
     "wordCount": "866"
   }
   </script>
-
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "https://tremelow.github.io/",
+       "name": "Website of Léopold Trémant",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://tremelow.github.io/blog/",
+       "name": "Blog Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "Making My Website Using Hugo",
+       "position": 3
+     }
+   ]
+ }
+  </script>
 
   
-  <meta name="author" content="Léopold Trémant" />
+  
+    <meta name="author" content="Léopold Trémant" />
+  
   
     
       <link href="https://github.com/tremelow" rel="me" />
@@ -171,13 +200,14 @@
   
   
   
+  
 
 
   
   
 </head>
 <body
-    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral"
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
   >
     <div id="the-top" class="absolute flex self-center">
       <a
@@ -189,7 +219,7 @@
     </div>
     
     
-      <header class="py-6 font-semibold text-neutral-900 print:hidden sm:py-10 dark:text-neutral">
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
   <nav class="flex items-start justify-between sm:items-center">
     
     <div class="z-40 flex flex-row items-center">
@@ -230,7 +260,7 @@
                   
                     <a
                       href="/about/"
-                      title=""
+                      title="About me"
                       onclick="close_menu()"
                       
                       ><span
@@ -247,7 +277,7 @@
                   
                     <a
                       href="/work/"
-                      title=""
+                      title="Publications"
                       onclick="close_menu()"
                       
                       ><span
@@ -264,7 +294,7 @@
                   
                     <a
                       href="/blog/"
-                      title=""
+                      title="Blog posts"
                       onclick="close_menu()"
                       
                       ><span
@@ -316,11 +346,81 @@
                   
                     
                     
+  
+    
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">EN</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/fr/blog/hugo-blog-setup/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >Français</a
+                    >
+                  
+                </div>
+              
+            
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/blog/hugo-blog-setup/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >English<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
                   
                 </li>
               
-                
-                  
               
             
           </ul>
@@ -335,7 +435,7 @@
               
                 <a
                   href="/about/"
-                  title=""
+                  title="About me"
                   
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -351,7 +451,7 @@
               
                 <a
                   href="/work/"
-                  title=""
+                  title="Publications"
                   
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -367,7 +467,7 @@
               
                 <a
                   href="/blog/"
-                  title=""
+                  title="Blog posts"
                   
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -418,11 +518,81 @@
               
                 
                 
+  
+    
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">EN</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/fr/blog/hugo-blog-setup/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >Français</a
+                    >
+                  
+                </div>
+              
+            
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/blog/hugo-blog-setup/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >English<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
               
             </li>
           
-            
-              
           
 
         
@@ -438,7 +608,7 @@
   <article>
     <header class="max-w-prose">
       
-        <ol class="text-sm text-neutral-500 print:hidden dark:text-neutral-400">
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
   
   
     
@@ -448,7 +618,7 @@
   <li class="hidden inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="/"
+      href="https://tremelow.github.io/"
       >Website of Léopold Trémant</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -457,7 +627,7 @@
   <li class=" inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="/blog/"
+      href="https://tremelow.github.io/blog/"
       >Blog posts</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -466,7 +636,7 @@
   <li class="hidden inline">
     <a
       class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
-      href="/blog/hugo-blog-setup/"
+      href="https://tremelow.github.io/blog/hugo-blog-setup/"
       >Making my website using Hugo</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
@@ -533,11 +703,11 @@
           <div class="toc pe-5 print:hidden lg:sticky lg:top-10">
             <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
   <summary
-    class="-ms-5 block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 lg:hidden dark:bg-neutral-700 dark:text-neutral-100"
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
   >
     Table of Contents
   </summary>
-  <div class="-ms-5 border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
     <li><a href="#why-hugo">Why Hugo?</a></li>
@@ -560,9 +730,7 @@
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
         
-        <p>This website is generated from Markdown using 
-<a href="https://gohugo.io/" target="_blank" rel="noreferrer">Hugo</a> and the 
-<a href="https://jpanther.github.io/congo/" target="_blank" rel="noreferrer">Congo</a> theme! Here&rsquo;s how I set it up.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+        <p>This website is generated from Markdown using <a href="https://gohugo.io/" target="_blank" rel="noreferrer">Hugo</a> and the <a href="https://jpanther.github.io/congo/" target="_blank" rel="noreferrer">Congo</a> theme! Here&rsquo;s how I set it up.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <h2 id="why-hugo" class="relative group">Why Hugo? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#why-hugo" aria-label="Anchor">#</a></span></h2><ul>
 <li>converts from Markdown, my note-taking &ldquo;language&rdquo; of choice</li>
 <li>large database of themes and examples</li>
@@ -570,8 +738,7 @@
 <li>recommended by a friend :)</li>
 </ul>
 <p>Also, everyone says Hugo is fast. As it is the only static site generator<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> I&rsquo;ve ever used, I can&rsquo;t comment on this, but my site has never taken more than a couple of seconds to build. This is great when iterating on designs.</p>
-<h2 id="how-hugo" class="relative group">How Hugo? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-hugo" aria-label="Anchor">#</a></span></h2><h3 id="choosing-a-theme" class="relative group">Choosing a theme <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#choosing-a-theme" aria-label="Anchor">#</a></span></h3><p>I ended up choosing 
-<a href="https://jpanther.github.io/congo/" target="_blank" rel="noreferrer">Congo</a> for my theme, for a few reasons.</p>
+<h2 id="how-hugo" class="relative group">How Hugo? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-hugo" aria-label="Anchor">#</a></span></h2><h3 id="choosing-a-theme" class="relative group">Choosing a theme <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#choosing-a-theme" aria-label="Anchor">#</a></span></h3><p>I ended up choosing <a href="https://jpanther.github.io/congo/" target="_blank" rel="noreferrer">Congo</a> for my theme, for a few reasons.</p>
 <ol>
 <li>multi-page</li>
 <li>full of features but still fairly minimalist</li>
@@ -588,13 +755,9 @@
 </ul>
 <blockquote>
 <p>[!warning]
-This means that after cloning this repo, you should run use <code>git clone --recursive</code>, or follow the standard cloning with <code>git submodule update --init themes/congo</code> before building the website!</p>
-</blockquote>
-<p>My previous website used 
-<a href="https://github.com/HugoBlox/theme-academic-cv" target="_blank" rel="noreferrer">Academic</a> by WowChemy / HugoBlox, but it was too closed off for me. I like the original approach of Hugo with snippets and modularity, while with HugoBlox, anything outside of the box was inaccessible. With Congo, I was able to tweak and modify a lot of things on my own.</p>
-<h3 id="the-project-structure" class="relative group">The project structure <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-project-structure" aria-label="Anchor">#</a></span></h3><p>I have a private git repo with the source,<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> which I work on using <code>hugo server</code>. Once a blog post or modification is finished, I just run <code>hugo</code> which generates the website files in a <code>public</code> folder. This folder is linked to 
-<a href="https://github.com/tremelow/tremelow.github.io" target="_blank" rel="noreferrer">another git repo</a>, which is synced to the website with 
-<a href="https://pages.github.com/" target="_blank" rel="noreferrer">Github Pages</a>.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> I just have to do</p>
+This means that after cloning this repo, you should run use <code>git clone --recursive</code>, or follow the standard cloning with <code>git submodule update --init themes/congo</code> before building the website!</p></blockquote>
+<p>My previous website used <a href="https://github.com/HugoBlox/theme-academic-cv" target="_blank" rel="noreferrer">Academic</a> by WowChemy / HugoBlox, but it was too closed off for me. I like the original approach of Hugo with snippets and modularity, while with HugoBlox, anything outside of the box was inaccessible. With Congo, I was able to tweak and modify a lot of things on my own.</p>
+<h3 id="the-project-structure" class="relative group">The project structure <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-project-structure" aria-label="Anchor">#</a></span></h3><p>I have a private git repo with the source,<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> which I work on using <code>hugo server</code>. Once a blog post or modification is finished, I just run <code>hugo</code> which generates the website files in a <code>public</code> folder. This folder is linked to <a href="https://github.com/tremelow/tremelow.github.io" target="_blank" rel="noreferrer">another git repo</a>, which is synced to the website with <a href="https://pages.github.com/" target="_blank" rel="noreferrer">Github Pages</a>.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> I just have to do</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">git add .
 </span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;&lt;date of update&gt;&#34;</span>
 </span></span><span class="line"><span class="cl">git push
@@ -605,19 +768,14 @@ This means that after cloning this repo, you should run use <code>git clone --re
 <ul>
 <li>leaves for publications and &ldquo;about&rdquo; page</li>
 <li>storing PDFs of publications in <code>static/&lt;leaf name&gt;</code> (in my case, <code>&lt;leaf name&gt;</code> is <code>work</code>)</li>
-<li>Enabled the light/dark button and <code>header.layout = hybrid</code> (see 
-<a href="https://jpanther.github.io/congo/docs/getting-started/#action-links" target="_blank" rel="noreferrer">the Congo docs</a>)</li>
+<li>Enabled the light/dark button and <code>header.layout = hybrid</code> (see <a href="https://jpanther.github.io/congo/docs/getting-started/#action-links" target="_blank" rel="noreferrer">the Congo docs</a>)</li>
 </ul>
 </li>
-<li>Allowed custom alt text for the profile picture to give proper credit to 
-<a href="https://atelier-marmo.myportfolio.com/" target="_blank" rel="noreferrer">Marie Morin</a></li>
+<li>Allowed custom alt text for the profile picture to give proper credit to <a href="https://atelier-marmo.myportfolio.com/" target="_blank" rel="noreferrer">Marie Morin</a></li>
 <li>Imported some icons from FontAwesome (fixed for dark mode, <code>&lt;path d=...&gt;</code> should be <code>&lt;path fill=&quot;currentColor&quot; d=...&gt;</code>)</li>
-<li>Imported a TikZJax script by 
-<a href="https://github.com/benrbray/tikzjax" target="_blank" rel="noreferrer">benrbray</a></li>
+<li>Imported a TikZJax script by <a href="https://github.com/benrbray/tikzjax" target="_blank" rel="noreferrer">benrbray</a></li>
 <li>Modified <code>badge</code> to allow <code>href</code> in it (because <code>button</code> was too clunky)</li>
-<li>Preview on footnote hover (thanks to 
-<a href="https://blog.securecloudops.com/post/doc-footnote-preview/" target="_blank" rel="noreferrer">1</a> 
-<a href="https://github.com/aidenlx/better-fn" target="_blank" rel="noreferrer">2</a>), which still needs work</li>
+<li>Preview on footnote hover (thanks to <a href="https://blog.securecloudops.com/post/doc-footnote-preview/" target="_blank" rel="noreferrer">1</a> <a href="https://github.com/aidenlx/better-fn" target="_blank" rel="noreferrer">2</a>), which still needs work</li>
 <li>Added a parameter <code>reverseChronological</code> to avoid chronological order</li>
 </ul>
 <p>All these modifications are visible either in <code>assets</code> or <code>layouts</code>.</p>
@@ -632,8 +790,7 @@ This means that after cloning this repo, you should run use <code>git clone --re
 <li><input disabled="" type="checkbox"> Callout boxes
 <ul>
 <li><input disabled="" type="checkbox"> Fix weird offset when it contains a list</li>
-<li><input disabled="" type="checkbox"> Make them foldable and give them a potential title (maybe using 
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank" rel="noreferrer"><code>&lt;details&gt;</code></a>)</li>
+<li><input disabled="" type="checkbox"> Make them foldable and give them a potential title (maybe using <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank" rel="noreferrer"><code>&lt;details&gt;</code></a>)</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"> Footnotes
@@ -646,25 +803,15 @@ This means that after cloning this repo, you should run use <code>git clone --re
 <li><input disabled="" type="checkbox"> &ldquo;Cite&rdquo; button for publications, to make the Bibtex appear</li>
 <li><input disabled="" type="checkbox"> Dark / Light colour theme
 <ul>
-<li><input checked="" disabled="" type="checkbox"> Post-process TikZ images to fit with the theme (graft the post-process of 
-<a href="https://github.com/artisticat1/obsidian-tikzjax/" target="_blank" rel="noreferrer">Obsidian TikZ</a> with the 
-<a href="https://github.com/bill-ion/tikzjax" target="_blank" rel="noreferrer">most recent</a> or 
-<a href="https://github.com/benrbray/tikzjax" target="_blank" rel="noreferrer">most visible</a> fork, as motivated by this 
-<a href="https://stackoverflow.com/questions/77758813/how-to-use-tikz-libraries-in-tikzjax" target="_blank" rel="noreferrer">StackOverflow answer</a>)</li>
-<li><input disabled="" type="checkbox"> Different images depending on theme (reading list: 
-<a href="https://ahelwer.ca/post/2023-04-06-dark-mode/" target="_blank" rel="noreferrer">1</a> 
-<a href="https://stenbrinke.nl/blog/adding-support-for-dark-and-light-images-to-hugo-figure-shortcode/" target="_blank" rel="noreferrer">2</a> 
-<a href="https://zerovip.github.io/en/15738/" target="_blank" rel="noreferrer">3</a>)</li>
+<li><input checked="" disabled="" type="checkbox"> Post-process TikZ images to fit with the theme (graft the post-process of <a href="https://github.com/artisticat1/obsidian-tikzjax/" target="_blank" rel="noreferrer">Obsidian TikZ</a> with the <a href="https://github.com/bill-ion/tikzjax" target="_blank" rel="noreferrer">most recent</a> or <a href="https://github.com/benrbray/tikzjax" target="_blank" rel="noreferrer">most visible</a> fork, as motivated by this <a href="https://stackoverflow.com/questions/77758813/how-to-use-tikz-libraries-in-tikzjax" target="_blank" rel="noreferrer">StackOverflow answer</a>)</li>
+<li><input disabled="" type="checkbox"> Different images depending on theme (reading list: <a href="https://ahelwer.ca/post/2023-04-06-dark-mode/" target="_blank" rel="noreferrer">1</a> <a href="https://stenbrinke.nl/blog/adding-support-for-dark-and-light-images-to-hugo-figure-shortcode/" target="_blank" rel="noreferrer">2</a> <a href="https://zerovip.github.io/en/15738/" target="_blank" rel="noreferrer">3</a>)</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"> My own colour theme</li>
 <li><input disabled="" type="checkbox"> Colour to indicate current section in navigation bar (maybe superfluous with breadcrumbs) and/or position in Table of contents</li>
-<li><input disabled="" type="checkbox"> Automatic conversion from Obsidian to Hugo syntax (maybe with 
-<a href="https://amethyst.bencuan.me/" target="_blank" rel="noreferrer">Amethyst</a>?)</li>
-<li><input disabled="" type="checkbox"> Enable comments (see 
-<a href="https://gohugo.io/content-management/comments/" target="_blank" rel="noreferrer">the Hugo docs</a>)</li>
-<li><input disabled="" type="checkbox"> Improve icons support using e.g. 
-<a href="https://hugo-mods.github.io/blog/icons/" target="_blank" rel="noreferrer">the Icons module</a></li>
+<li><input disabled="" type="checkbox"> Automatic conversion from Obsidian to Hugo syntax (maybe with <a href="https://amethyst.bencuan.me/" target="_blank" rel="noreferrer">Amethyst</a>?)</li>
+<li><input disabled="" type="checkbox"> Enable comments (see <a href="https://gohugo.io/content-management/comments/" target="_blank" rel="noreferrer">the Hugo docs</a>)</li>
+<li><input disabled="" type="checkbox"> Improve icons support using e.g. <a href="https://hugo-mods.github.io/blog/icons/" target="_blank" rel="noreferrer">the Icons module</a></li>
 </ul>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -673,16 +820,10 @@ This means that after cloning this repo, you should run use <code>git clone --re
 <p>This is <strong>not</strong> a tutorial, what I&rsquo;ve written is very sparse, and gets into the very specific details I spent time on <em>despite reading tutorials.</em>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
-<p>I&rsquo;ve also read good things about 
-<a href="https://www.getzola.org/" target="_blank" rel="noreferrer">Zola</a> 
-<a href="https://mrkaran.dev/posts/migrating-to-zola/" target="_blank" rel="noreferrer">here</a> and 
-<a href="https://astro.build/" target="_blank" rel="noreferrer">Astro</a> 
-<a href="https://onebite.dev/hugo-vs-astro-which-static-site-generator-to-choose-in-2023/" target="_blank" rel="noreferrer">here</a>. The former uses a similar syntax to Hugo, but I&rsquo;ve not yet faced issues with the unfortunate &ldquo;magic&rdquo; of Hugo which Zola supposedly prevents. The latter targets devs familiar with JavaScript and/or other website generator, which I&rsquo;m not. Personally, I&rsquo;d rather <del>steal from</del> use the large database of themes and examples for Hugo than tinker for days myself.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>I&rsquo;ve also read good things about <a href="https://www.getzola.org/" target="_blank" rel="noreferrer">Zola</a> <a href="https://mrkaran.dev/posts/migrating-to-zola/" target="_blank" rel="noreferrer">here</a> and <a href="https://astro.build/" target="_blank" rel="noreferrer">Astro</a> <a href="https://onebite.dev/hugo-vs-astro-which-static-site-generator-to-choose-in-2023/" target="_blank" rel="noreferrer">here</a>. The former uses a similar syntax to Hugo, but I&rsquo;ve not yet faced issues with the unfortunate &ldquo;magic&rdquo; of Hugo which Zola supposedly prevents. The latter targets devs familiar with JavaScript and/or other website generator, which I&rsquo;m not. Personally, I&rsquo;d rather <del>steal from</del> use the large database of themes and examples for Hugo than tinker for days myself.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3">
-<p>My source is actually public 
-<a href="https://github.com/tremelow/congo-website" target="_blank" rel="noreferrer">here</a>, since I wanted the changes I made to the theme to be freely available. In the future, I plan on following 
-<a href="https://stackoverflow.com/questions/7983204/having-a-private-branch-of-a-public-repo-on-github" target="_blank" rel="noreferrer">this StackOverflow guide</a> to separate between my drafts and my public modifications.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>My source is actually public <a href="https://github.com/tremelow/congo-website" target="_blank" rel="noreferrer">here</a>, since I wanted the changes I made to the theme to be freely available. In the future, I plan on following <a href="https://stackoverflow.com/questions/7983204/having-a-private-branch-of-a-public-repo-on-github" target="_blank" rel="noreferrer">this StackOverflow guide</a> to separate between my drafts and my public modifications.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4">
 <p>The Gitlab of most labs and universities have this feature too, nowadays! The CNRS webpage hosting does as well.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
@@ -707,7 +848,7 @@ This means that after cloning this repo, you should run use <code>git clone --re
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="group flex" href="/blog/tp-pisano/">
+            <a class="group flex" href="https://tremelow.github.io/blog/tp-pisano/">
               <span
                 class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
                 ><span class="ltr:inline rtl:hidden">&larr;</span
@@ -716,7 +857,7 @@ This means that after cloning this repo, you should run use <code>git clone --re
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >TP: Visualisation de la période de Pisano</span
+                  >[FR] TP: Visualisation de la période de Pisano</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
@@ -729,11 +870,11 @@ This means that after cloning this repo, you should run use <code>git clone --re
         </span>
         <span>
           
-            <a class="group flex text-right" href="/blog/introduction_deep_learning/">
+            <a class="group flex text-right" href="https://tremelow.github.io/blog/introduction_deep_learning/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Introduction au deep learning</span
+                  >[FR] Introduction au deep learning</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
@@ -742,7 +883,7 @@ This means that after cloning this repo, you should run use <code>git clone --re
                 </span>
               </span>
               <span
-                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
                 ><span class="ltr:inline rtl:hidden">&rarr;</span
                 ><span class="ltr:hidden rtl:inline">&larr;</span></span
               >
@@ -758,19 +899,23 @@ This means that after cloning this repo, you should run use <code>git clone --re
     </footer>
   </article>
 
-        
-          <div class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12">
-            <a
-              href="#the-top"
-              class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-              aria-label="Scroll to top"
-              title="Scroll to top"
-            >
-              &uarr;
-            </a>
-          </div>
-        
-      </main><footer class="py-10 print:hidden">
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
   
   
   <div class="flex items-center justify-between">
@@ -779,7 +924,7 @@ This means that after cloning this repo, you should run use <code>git clone --re
       
         <p class="text-sm text-neutral-500 dark:text-neutral-400">
             &copy;
-            2024
+            2025
             Léopold Trémant
         </p>
       

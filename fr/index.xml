@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Site personnel de Léopold Trémant on Léopold Trémant</title>
+    <link>https://tremelow.github.io/fr/</link>
+    <description>Recent content in Site personnel de Léopold Trémant on Léopold Trémant</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 22 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://tremelow.github.io/fr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Équations différentielles stochastiques et modèles de diffusion (groupe de travail)</title>
+      <link>https://tremelow.github.io/fr/blog/gdt-eds-lml/</link>
+      <pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/gdt-eds-lml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction au deep learning</title>
+      <link>https://tremelow.github.io/fr/blog/introduction_deep_learning/</link>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/introduction_deep_learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mihai Nica - Alice HH vs Bob HT</title>
+      <link>https://tremelow.github.io/fr/blog/video-recommendations/2024-05-17-hh-vs-ht/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/video-recommendations/2024-05-17-hh-vs-ht/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nemean - Fast Inverse Square Root — A Quake III Algorithm</title>
+      <link>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-18-inverse-sqrt/</link>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-18-inverse-sqrt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>sudgylacmoe -  A Swift Introduction to Geometric Algebra </title>
+      <link>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-11-geometric-algebra/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-11-geometric-algebra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>[EN] Making my website using Hugo</title>
+      <link>https://tremelow.github.io/fr/blog/hugo-blog-setup/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/hugo-blog-setup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Daria Ivanova - Affording a planet with geometry</title>
+      <link>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-04-dewdrop-planet/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-04-dewdrop-planet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>[EN] Linear backward error analysis</title>
+      <link>https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>[EN] Motivating backward error analysis</title>
+      <link>https://tremelow.github.io/fr/blog/backward-error-analysis/01-motivating-bea/</link>
+      <pubDate>Wed, 28 Feb 2024 21:29:05 +0100</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/backward-error-analysis/01-motivating-bea/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TP: Visualisation de la période de Pisano</title>
+      <link>https://tremelow.github.io/fr/blog/tp-pisano/</link>
+      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/tp-pisano/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>À propos</title>
+      <link>https://tremelow.github.io/fr/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>https://tremelow.github.io/fr/work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/work/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

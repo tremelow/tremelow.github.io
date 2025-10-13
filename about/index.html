@@ -15,7 +15,7 @@
 ><head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="rgb(255,255,255)" />
+  <meta name="theme-color" content="#FFFFFF" />
   
   <title>About me &middot; Léopold Trémant</title>
     <meta name="title" content="About me &middot; Léopold Trémant" />
@@ -26,8 +26,8 @@
   
   <script
     type="text/javascript"
-    src="/js/appearance.min.022d0ebc3b46a335eb1c7ef79b7f2de143d7cd5156d433638592ef1ce5f8554e.js"
-    integrity="sha256-Ai0OvDtGozXrHH73m38t4UPXzVFW1DNjhZLvHOX4VU4="
+    src="https://tremelow.github.io/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
   ></script>
   
   
@@ -42,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.ce0fd55dff00d5ee3b33eb91412f97ebccaa8799b9ff086886c42b395101f81a.css"
-    integrity="sha256-zg/VXf8A1e47M&#43;uRQS&#43;X68yqh5m5/whohsQrOVEB&#43;Bo="
+    href="https://tremelow.github.io/css/main.bundle.min.419c08c90febf1eea3856dc0a2f6546a7f0412aa16d78ee78ae918dcd9d4ee63.css"
+    integrity="sha256-QZwIyQ/r8e6jhW3AovZUan8EEqoW147niukY3NnU7mM="
   />
   
   
@@ -59,7 +59,7 @@
       defer
       type="text/javascript"
       id="script-bundle"
-      src="/js/main.bundle.min.d4b727caf411cb5c3b421d0d427ed1e3daeafe0d04840327efad4978430edb8c.js"
+      src="https://tremelow.github.io/js/main.bundle.min.d4b727caf411cb5c3b421d0d427ed1e3daeafe0d04840327efad4978430edb8c.js"
       integrity="sha256-1LcnyvQRy1w7Qh0NQn7R49rq/g0EhAMn761JeEMO24w="
       data-copy="Copy"
       data-copied="Copied"
@@ -77,7 +77,9 @@
   
   
   
-  <link rel="canonical" href="https://tremelow.github.io/about/" />
+  
+    <link rel="canonical" href="https://tremelow.github.io/about/" />
+  
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -127,13 +129,33 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "183"
+    "wordCount": "203"
   }
   </script>
-
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "https://tremelow.github.io/",
+       "name": "Website of Léopold Trémant",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "name": "About Me",
+       "position": 2
+     }
+   ]
+ }
+  </script>
 
   
-  <meta name="author" content="Léopold Trémant" />
+  
+    <meta name="author" content="Léopold Trémant" />
+  
   
     
       <link href="https://github.com/tremelow" rel="me" />
@@ -168,13 +190,14 @@
   
   
   
+  
 
 
   
   
 </head>
 <body
-    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral"
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
   >
     <div id="the-top" class="absolute flex self-center">
       <a
@@ -186,7 +209,7 @@
     </div>
     
     
-      <header class="py-6 font-semibold text-neutral-900 print:hidden sm:py-10 dark:text-neutral">
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
   <nav class="flex items-start justify-between sm:items-center">
     
     <div class="z-40 flex flex-row items-center">
@@ -227,7 +250,7 @@
                   
                     <a
                       href="/about/"
-                      title=""
+                      title="About me"
                       onclick="close_menu()"
                       
                       ><span
@@ -244,7 +267,7 @@
                   
                     <a
                       href="/work/"
-                      title=""
+                      title="Publications"
                       onclick="close_menu()"
                       
                       ><span
@@ -261,7 +284,7 @@
                   
                     <a
                       href="/blog/"
-                      title=""
+                      title="Blog posts"
                       onclick="close_menu()"
                       
                       ><span
@@ -313,11 +336,81 @@
                   
                     
                     
+  
+    
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">EN</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/about/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >English<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/fr/about/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >Français</a
+                    >
+                  
+                </div>
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
                   
                 </li>
               
-                
-                  
               
             
           </ul>
@@ -332,7 +425,7 @@
               
                 <a
                   href="/about/"
-                  title=""
+                  title="About me"
                   
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -348,7 +441,7 @@
               
                 <a
                   href="/work/"
-                  title=""
+                  title="Publications"
                   
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -364,7 +457,7 @@
               
                 <a
                   href="/blog/"
-                  title=""
+                  title="Blog posts"
                   
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -415,11 +508,81 @@
               
                 
                 
+  
+    
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">EN</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/about/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >English<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/fr/about/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >Français</a
+                    >
+                  
+                </div>
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
               
             </li>
           
-            
-              
           
 
         
@@ -445,22 +608,16 @@
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
         
-        <p>I am a teaching assistant (Maître de Conférences) in Lens, in northern France.
-Half of my time is spent teaching young programmers at the 
-<a href="https://www.iut-lens.univ-artois.fr/" target="_blank" rel="noreferrer">IUT</a> in the Computer Science department.
-The other half is spent doing research in the 
-<a href="http://lml.univ-artois.fr/public/index-en.html" target="_blank" rel="noreferrer">Laboratoire de Mathématiques de Lens</a>.</p>
-<p>Before joining Lens, I was a post-doc in the Inria team Macaron (previously 
-<a href="https://team.inria.fr/tonus/" target="_blank" rel="noreferrer">TONUS</a>) and 
-<a href="https://irma.math.unistra.fr/" target="_blank" rel="noreferrer">IRMA</a> in Strasbourg, working with C. Courtès, E. Franck, M. Kraus and L. Navoret.
-Before that, I was a graduate assistant at 
-<a href="https://ensimag.grenoble-inp.fr/" target="_blank" rel="noreferrer">Ensimag</a> as a member of the 
-<a href="https://www-ljk.imag.fr/" target="_blank" rel="noreferrer">Laboratoire Jean Kuntzmann</a> in Grenoble.
-I completed my PhD in December 2021 in Rennes under the supervision of P. Chartier and M. Lemou.</p>
+        <p>I am an assistant professor (Maître de Conférences) in Lens, in northern France.
+Half of my time is spent teaching young programmers at the <a href="https://www.iut-lens.univ-artois.fr/" target="_blank" rel="noreferrer">IUT</a> in the Computer Science department.
+The other half is spent doing research in the <a href="http://lml.univ-artois.fr/public/index-en.html" target="_blank" rel="noreferrer">Laboratoire de Mathématiques de Lens</a>.</p>
+<p>Before joining Lens, I was a post-doc in the Inria team Macaron (previously <a href="https://team.inria.fr/tonus/" target="_blank" rel="noreferrer">TONUS</a>) and <a href="https://irma.math.unistra.fr/" target="_blank" rel="noreferrer">IRMA</a> in Strasbourg, working with C. Courtès, E. Franck, M. Kraus and L. Navoret.
+Before that, I was a graduate assistant at <a href="https://ensimag.grenoble-inp.fr/" target="_blank" rel="noreferrer">Ensimag</a> as a member of the <a href="https://www-ljk.imag.fr/" target="_blank" rel="noreferrer">Laboratoire Jean Kuntzmann</a> in Grenoble.
+I completed my PhD in December 2021 in Rennes under the supervision of P. Chartier and M. Lemou, as part of the <a href="https://team.inria.fr/mingus/" target="_blank" rel="noreferrer">MINGuS</a> Inria team.</p>
 <p>My research focuses on multi-scale and geometric methods in a numerical context.
-More specifically, I study the properties of asymptotic expansions and use them to obtain better numerical convergence in stiff problems.
-During my PhD, I worked on relaxation problems such as the linear Boltzmann equation, and more recently I worked on the Bloch equation.
-For my post-doc, I study the properties of geometric machine learning when reconstructing vector fields based on trajectories.</p>
+More specifically, I study the properties of asymptotic expansions and use them to obtain better numerical convergence.
+Some examples are stiff relaxation problems such as the linear Boltzmann equation, the highly-oscillatory Bloch equation or the long-time behaviour of guiding center dynamics.
+For my post-doc, I worked on geometric machine learning, namely the link between the numerical scheme used at inference and the learnt vector fields properties of geometric machine learning when reconstructing vector fields.</p>
 
       </div>
     </section>
@@ -475,8 +632,23 @@ For my post-doc, I study the properties of geometric machine learning when recon
     </footer>
   </article>
 
-        
-      </main><footer class="py-10 print:hidden">
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
   
   
   <div class="flex items-center justify-between">
@@ -485,7 +657,7 @@ For my post-doc, I study the properties of geometric machine learning when recon
       
         <p class="text-sm text-neutral-500 dark:text-neutral-400">
             &copy;
-            2024
+            2025
             Léopold Trémant
         </p>
       

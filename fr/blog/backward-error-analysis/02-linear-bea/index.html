@@ -1,0 +1,1307 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="fr"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>[EN] Linear backward error analysis &middot; Léopold Trémant</title>
+    <meta name="title" content="[EN] Linear backward error analysis &middot; Léopold Trémant" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="https://tremelow.github.io/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://tremelow.github.io/css/main.bundle.min.419c08c90febf1eea3856dc0a2f6546a7f0412aa16d78ee78ae918dcd9d4ee63.css"
+    integrity="sha256-QZwIyQ/r8e6jhW3AovZUan8EEqoW147niukY3NnU7mM="
+  />
+  
+  
+  
+  
+    
+    
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="https://tremelow.github.io/js/main.bundle.min.d4b727caf411cb5c3b421d0d427ed1e3daeafe0d04840327efad4978430edb8c.js"
+      integrity="sha256-1LcnyvQRy1w7Qh0NQn7R49rq/g0EhAMn761JeEMO24w="
+      data-copy="Copier"
+      data-copied="Copié"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/">
+  <meta property="og:site_name" content="Léopold Trémant">
+  <meta property="og:title" content="[EN] Linear backward error analysis">
+  <meta property="og:locale" content="fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-03-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-03-01T00:00:00+00:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="[EN] Linear backward error analysis">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Articles de blog",
+    "name": "[EN] Linear backward error analysis",
+    "headline": "[EN] Linear backward error analysis",
+    
+    
+    "inLanguage": "fr",
+    "url" : "https:\/\/tremelow.github.io\/fr\/blog\/backward-error-analysis\/02-linear-bea\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Léopold Trémant"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-03-01T00:00:00\u002b00:00",
+    "datePublished": "2024-03-01T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-03-01T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1656"
+  }
+  </script>
+    
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "https://tremelow.github.io/fr/",
+       "name": "Site Personnel De Léopold Trémant",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://tremelow.github.io/fr/blog/",
+       "name": "Articles De Blog",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://tremelow.github.io/fr/blog/backward-error-analysis/",
+       "name": "[ En] a Gentle Introduction to Backward Error Analysis",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "[ En] Linear Backward Error Analysis",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Léopold Trémant" />
+  
+  
+    
+      <link href="https://github.com/tremelow" rel="me" />
+    
+      <link href="https://scholar.google.com/citations?user=B1MDQ-0AAAAJ" rel="me" />
+    
+      <link href="https://orcid.org/0000-0002-0512-4286" rel="me" />
+    
+  
+  
+  
+
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="/lib/footnote/footnote.f03f23c119c4b71fde9b0201233d8261c411221bff58253306fdd6480bc05c609b0c351b6414643bafd388832fb8b995a10ed27fb87d707bce00d8553f0804fe.css"
+  integrity="sha512-8D8jwRnEtx/emwIBIz2CYcQRIhv/WCUzBv3WSAvAXGCbDDUbZBRkO6/TiIMvuLmVoQ7Sf7h9cHvOANhVPwgE/g=="
+/>
+
+
+<script
+  defer
+  src="/lib/footnote/initFootnoteTooltip.2ee0c0803c48d1204d78affde68efb544e6d094df2d2062b77266e66126564a2639187d4eb55d456193a91607c4e6e6b8449788596badd29bde2a1240b9d5ef6.js"
+  integrity="sha512-LuDAgDxI0SBNeK/95o77VE5tCU3y0gYrdyZuZhJlZKJjkYfU61XUVhk6kWB8Tm5rhEl4hZa63Sm94qEkC51e9g=="
+></script>
+
+
+
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/lib/katex/katex.min.7e7e35e3ef02b7b437449a44ca3fac62ec1ed39cb8312b680a00fe8ac60badc95b063b694636b8440856f7f5e8c2cc9e6b0efb581179b2656c7e1e97558c7096.css"
+    integrity="sha512-fn414&#43;8Ct7Q3RJpEyj&#43;sYuwe05y4MStoCgD&#43;isYLrclbBjtpRja4RAhW9/Xowsyeaw77WBF5smVsfh6XVYxwlg=="
+  />
+  
+  
+  <script
+    defer
+    src="/lib/katex/katex.min.cadd45c1af1f44bdaf196dc9b104f1daeb29043f0dc59155ffe22847510a04390a0b7a859400d420a626204f7fc5ddb07c19311de1c66b25e19c2559d3e126a8.js"
+    integrity="sha512-yt1Fwa8fRL2vGW3JsQTx2uspBD8NxZFV/&#43;IoR1EKBDkKC3qFlADUIKYmIE9/xd2wfBkxHeHGayXhnCVZ0&#43;EmqA=="
+  ></script>
+  
+  
+  <script
+    defer
+    src="/lib/katex/auto-render.min.e9b2833d28623d18c071d78ef13e9c79d695122d296af3dbcee7bf1bf6518b0565bab59939267fbc8f5faf696193c20f5caef3e7501969cfb306f6738032730d.js"
+    integrity="sha512-6bKDPShiPRjAcdeO8T6cedaVEi0pavPbzue/G/ZRiwVlurWZOSZ/vI9fr2lhk8IPXK7z51AZac&#43;zBvZzgDJzDQ=="
+    onload="renderMathInElement(document.body);"
+  ></script>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Aller au contenu</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="z-40 flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/fr/"
+    >Léopold Trémant</a
+  >
+
+    </div>
+    
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/fr/about/"
+                      title="À propos"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >à propos</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/fr/work/"
+                      title="Publications"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >travaux</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/fr/blog/"
+                      title="Articles de blog"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >blog</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    <button
+                      id="appearance-switcher-1"
+                      type="button"
+                      aria-label="appearance switcher"
+                    >
+                      <span
+                        class="group-dark:hover:text-primary-400 inline transition-colors group-hover:text-primary-600 dark:hidden"
+                        title="Passer au thème sombre"
+                      >
+                        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </span>
+                      <span
+                        class="group-dark:hover:text-primary-400 hidden transition-colors group-hover:text-primary-600 dark:inline"
+                        title="Passer au thème clair"
+                      >
+                        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </span>
+                    </button>
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+  
+    
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">FR</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >Français<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >English</a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
+                  
+                </li>
+              
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/fr/about/"
+                  title="À propos"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >à propos</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/fr/work/"
+                  title="Publications"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >travaux</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/fr/blog/"
+                  title="Articles de blog"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >blog</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                <button
+                  id="appearance-switcher-2"
+                  type="button"
+                  aria-label="appearance switcher"
+                >
+                  <span
+                    class="group-dark:hover:text-primary-400 inline transition-colors group-hover:text-primary-600 dark:hidden"
+                    title="Passer au thème sombre"
+                  >
+                    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </span>
+                  <span
+                    class="group-dark:hover:text-primary-400 hidden transition-colors group-hover:text-primary-600 dark:inline"
+                    title="Passer au thème clair"
+                  >
+                    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </span>
+                </button>
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                
+  
+    
+    
+      <div class="group relative">
+        <button
+          class="group-dark:hover:text-primary-400 flex w-full items-center justify-end transition-colors group-hover:text-primary-600"
+        >
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path fill="currentColor" d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+  <path fill="currentColor" d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+</svg>
+</span><span class="text-sm">FR</span
+          ><span class="text-[0.6rem]"
+            ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+</span></span
+          >
+        </button>
+        
+          <div class="invisible w-full bg-transparent group-hover:visible"></div>
+        
+        <div
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+        >
+          
+          
+          
+            
+            
+              
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/"
+                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                      >Français<span
+                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+</span></span
+                      ></a
+                    >
+                  
+                </div>
+              
+            
+          
+            
+            
+              
+                
+                <div class="flex flex-grow">
+                  
+                    <a
+                      href="https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/"
+                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                      >English</a
+                    >
+                  
+                </div>
+              
+            
+              
+            
+          
+        </div>
+      </div>
+    
+  
+
+
+              
+            </li>
+          
+          
+
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+    
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://tremelow.github.io/fr/"
+      >Site personnel de Léopold Trémant</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class=" inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://tremelow.github.io/fr/blog/"
+      >Articles de blog</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class=" inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://tremelow.github.io/fr/blog/backward-error-analysis/"
+      >[EN] A gentle introduction to backward error analysis</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/"
+      >[EN] Linear backward error analysis</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        [EN] Linear backward error analysis
+      </h1>
+      
+        <div class="mb-12 mt-8 text-base text-neutral-500 print:hidden dark:text-neutral-400">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2024-03-01 00:00:00 &#43;0000 UTC">1 mars 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Temps de lecture">8 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 print:hidden lg:sticky lg:top-10">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Sommaire
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#explicit-euler">Explicit Euler</a>
+      <ul>
+        <li><a href="#modified-equations">Modified equations</a></li>
+        <li><a href="#corrected-equations--modifying-integrators">Corrected equations / Modifying integrators</a></li>
+        <li><a href="#application-to-the-harmonic-oscillator">Application to the harmonic oscillator</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#application-to-other-schemes">Application to other schemes</a>
+      <ul>
+        <li><a href="#modified-and-corrected-equations">Modified and corrected equations</a></li>
+        <li><a href="#the-harmonic-oscillator">The harmonic oscillator</a></li>
+        <li><a href="#the-multi-dimensional-case">The multi-dimensional case</a></li>
+      </ul>
+    </li>
+    <li><a href="#reality-check">Reality check</a>
+      <ul>
+        <li><a href="#the-non-linear-case">The non-linear case</a></li>
+        <li><a href="#were-not-supposed-to-know-the-flow">We&rsquo;re not supposed to know the flow</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        
+            
+            
+            <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+  <span class="pe-3 text-primary-400">
+    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+</span>
+  </span>
+  <span class="dark:text-neutral-300">
+    The figures might not be fully compatible with dark mode! It&#39;s a known issue I&#39;m working on. Also, TikZ figures have recently been made compatible! If you&#39;re still seeing black figures in dark mode, you can open web tools (in Firefox) &gt; Storage &gt; Indexed DB &gt; right-click TikzJax &gt; Delete.
+  </span>
+</div>
+        
+        
+
+<p>This post assumes you know the base idea behind backward error analysis. If you are not, you should first read my previous blog post.</p>
+<p>As is often the case, a good preliminary simplification is the linear case. Let&rsquo;s consider here a one-dimensional linear ODE, which is, for \(\lambda \in \mathbb{R}\) or in \(\mathbb{C}\),
+$$
+\dot{u} =\lambda u.
+$$
+In this case, the flow is the linear map \((t, u_0) \mapsto \varphi_t(u_0) = e^{t\lambda}u_0\), which also extends to higher dimensions when \(\lambda\) is a matrix.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h2 id="explicit-euler" class="relative group">Explicit Euler <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#explicit-euler" aria-label="Ancre">#</a></span></h2><p>The explicit Euler scheme can be summarily written
+$$ \Phi_h = \operatorname{id} + h\lambda . $$
+For this simple case, the modified vector field \(\widetilde{\lambda}_h\) and the corrected vector field \(\mu_h\) are found easily.</p>
+<h3 id="modified-equations" class="relative group">Modified equations <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#modified-equations" aria-label="Ancre">#</a></span></h3><p>For modified equations, we look for \(\widetilde{\lambda}_h\) such that
+$$ \widetilde{\varphi}_h = \Phi_h, \qquad\text{i.e.}\qquad\exp\bigl( h\widetilde{\lambda}_h \bigr) = \operatorname{id} + h\lambda . $$
+Extending the logarithm to complex numbers,<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> we find
+$$ \widetilde{\lambda}_h = \frac{1}{h} \log(1 + h\lambda) . $$
+Therefore, the modified equation is
+$$
+\frac{\mathrm{d}}{\mathrm{d}t} \widetilde{u}_h = \frac{1}{h}\log(1 + h\lambda), \widetilde{u}_h .
+$$
+Note that \(\widetilde{\lambda}_h = \lambda + \mathcal{O}(h)\), which corresponds to the first order of convergence of the scheme: in finite time \(\widetilde{u}_h(t) = u(t) + \mathcal{O}(h)\).</p>
+
+
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+  <span class="pe-3 text-primary-400">
+    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"/></svg>
+</span>
+  </span>
+  <span class="dark:text-neutral-300">
+    <strong>Link with stability</strong><br>
+In the real case, if \(h\lambda &lt; -1\) then \(\widetilde{\lambda}_h\) is complex, we write \(h\widetilde{\lambda}_h = \log|1 + h\lambda| + i\pi\). If additionally \(h\lambda &lt; -2\), then \(\Re(\widetilde{\lambda}_h) &gt; 0\), so the method is unstable. Of course in the case \(h\lambda &gt; 0\), the method is also &ldquo;unstable&rdquo; in the standard sense, but not more than the original problem. In fact it is more stable in some sense, \(\widetilde{\lambda}_h &lt; \lambda\).
+  </span>
+</div>
+<h3 id="corrected-equations--modifying-integrators" class="relative group">Corrected equations / Modifying integrators <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#corrected-equations--modifying-integrators" aria-label="Ancre">#</a></span></h3><p>This time, we want the numerical solution of a corrected problem
+$$ \dot v_h = \mu_h \dot{v}_h $$
+to coincide with the exact solution of \(\dot u = \lambda u\). In other words, we want
+$$ 1 + h\mu_h = e^{h\lambda}, \quad\text{i.e.}\quad \mu_h = \frac{1}{h} (e^{h\lambda} - 1). $$
+Then applying the Euler method with time-step \(h\) to the problem in \(v_h\) produces the exact solution, \(v_n = u(nh)\).</p>
+<p>Note that once the time-step is chosen for the corrected equation, it should not be changed! Look at the error of the method when correcting for \(h = 0.1\) and then simulating with a time-step \(\tau = 0.01\). Common belief would be that reducing the time-step increases accuracy. It does, but it increases accuracy <em>for a different problem</em>.</p>
+
+  
+  
+  
+  
+  
+
+  
+  
+  <figure class="mx-auto my-0 rounded-md">
+    
+      
+      
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    <picture  class="mx-auto my-0 rounded-md" >
+      <img
+        src="https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/linear-bea-convergence.svg"
+        width="576"
+        height="273.6"
+        class="mx-auto my-0 rounded-md"
+        
+        loading="lazy" decoding="async"
+      />
+    </picture>
+  
+
+
+    <figcaption class="text-center">Error as a function of time-step (tau) at time (T = 1) with (lambda = 1) <a
+  class="ms-1 rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400 !no-underline"
+  href="linear-bea-convergence.jl"  target="_blank" rel="noopener"
+>code</a></figcaption>
+  </figure>
+
+
+<h3 id="application-to-the-harmonic-oscillator" class="relative group">Application to the harmonic oscillator <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#application-to-the-harmonic-oscillator" aria-label="Ancre">#</a></span></h3><p>Here is a comparison of these two concepts applied to a harmonic oscillator,
+$$ \dot{u} = \Lambda u, \qquad \Lambda = J := \begin{pmatrix} 0 &amp; -1 \ 1 &amp; 0 \end{pmatrix} . $$</p>
+<h5 id="figure-for-the-harmonic-oscillator-with-both-the-modified-and-corrected-equations-h--01-code" class="relative group">Figure for the harmonic oscillator with both the modified and corrected equations, \(h = 0.1\) (CODE) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#figure-for-the-harmonic-oscillator-with-both-the-modified-and-corrected-equations-h--01-code" aria-label="Ancre">#</a></span></h5>
+  
+  
+  
+  
+  
+
+  
+  
+  <figure class="mx-auto my-0 rounded-md">
+    
+      
+      
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    <picture  class="mx-auto my-0 rounded-md" >
+      <img
+        src="https://tremelow.github.io/blog/backward-error-analysis/02-linear-bea/linear-bea-convergence.svg"
+        width="576"
+        height="273.6"
+        class="mx-auto my-0 rounded-md"
+        
+        loading="lazy" decoding="async"
+      />
+    </picture>
+  
+
+
+    <figcaption class="text-center">Error as a function of time-step (tau) at time (T = 1) with (lambda = 1) <a
+  class="ms-1 rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400 !no-underline"
+  href="linear-bea-convergence.jl"  target="_blank" rel="noopener"
+>code</a></figcaption>
+  </figure>
+
+
+<h2 id="application-to-other-schemes" class="relative group">Application to other schemes <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#application-to-other-schemes" aria-label="Ancre">#</a></span></h2><p>This result may be extended to any standard Runge-Kutta method in a fairly straightforward manner using the stability function. For a method of <a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods#Implicit_Runge%E2%80%93Kutta_methods" target="_blank" rel="noreferrer">Butcher tableau</a> \(\begin{array}{c|c} c &amp; A \\ \hline &amp; b^{\sf T} \end{array}\) the stability function is given by the formula<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>
+$$
+r(z) = 1 + z b^{\sf T} (\mathrm{id} - zA)^{-1} \mathbb{1}
+$$
+where \(\mathbb{1} = (1, \dots,1)^{\sf T}\).</p>
+<h3 id="modified-and-corrected-equations" class="relative group">Modified and corrected equations <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#modified-and-corrected-equations" aria-label="Ancre">#</a></span></h3><p>For a Runge-Kutta method of stability function \(z \mapsto r(z)\), the numerical scheme is exactly
+$$ \Phi_h = r(h\lambda) , $$
+and \(\widetilde{\lambda}_h\) is such that for all \(n \in \mathbb{N}\), \(e^{nh\,\widetilde{\lambda}_h} = (\Phi_h)^n = r(h\lambda)^n\). Evidently,
+$$
+\widetilde{\lambda}_h = \frac{1}{h} \log\bigl( r(h\lambda) \bigr), \quad\text{i.e.}\quad
+\frac{\mathrm{d}}{\mathrm{d}t} \widetilde{u}_{n}(t) = \frac{1}{h} \log\bigl( r(h\lambda) \bigr) \widetilde{u}_{n}(t) .
+$$
+As for corrected equations, \(\mu_h\) may be obtained through the implicit relation
+$$
+\frac{1}{h} \ln(r(h\mu_h)) = \lambda
+\quad\text{i.e.}\quad
+r(h\mu_h) = e^{h\lambda}
+$$
+Here are two specific methods,</p>
+<ul>
+<li><em>Implicit Euler:</em> \(\widetilde{\lambda}_h = -\frac{1}{h}\ln(1 - h\lambda)\), \(\mu_h = \frac{1}{h}(1 - e^{-h\lambda})\).</li>
+<li><em>Midpoint or Crank-Nicolson:</em> \(\widetilde{\lambda}_h = \frac{1}{h}\ln\left(\frac{1 + \frac{h}{2} \lambda}{1-\frac{h}{2}\lambda} \right)\), \(\mu_h = \frac{2}{h} \frac{e^{h\lambda} - 1}{e^{h\lambda} + 1}\)</li>
+</ul>
+
+
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+  <span class="pe-3 text-primary-400">
+    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="currentColor" d="M192 104.8c0-9.2-5.8-17.3-13.2-22.8C167.2 73.3 160 61.3 160 48c0-26.5 28.7-48 64-48s64 21.5 64 48c0 13.3-7.2 25.3-18.8 34c-7.4 5.5-13.2 13.6-13.2 22.8c0 12.8 10.4 23.2 23.2 23.2H336c26.5 0 48 21.5 48 48v56.8c0 12.8 10.4 23.2 23.2 23.2c9.2 0 17.3-5.8 22.8-13.2c8.7-11.6 20.7-18.8 34-18.8c26.5 0 48 28.7 48 64s-21.5 64-48 64c-13.3 0-25.3-7.2-34-18.8c-5.5-7.4-13.6-13.2-22.8-13.2c-12.8 0-23.2 10.4-23.2 23.2V464c0 26.5-21.5 48-48 48H279.2c-12.8 0-23.2-10.4-23.2-23.2c0-9.2 5.8-17.3 13.2-22.8c11.6-8.7 18.8-20.7 18.8-34c0-26.5-28.7-48-64-48s-64 21.5-64 48c0 13.3 7.2 25.3 18.8 34c7.4 5.5 13.2 13.6 13.2 22.8c0 12.8-10.4 23.2-23.2 23.2H48c-26.5 0-48-21.5-48-48V343.2C0 330.4 10.4 320 23.2 320c9.2 0 17.3 5.8 22.8 13.2C54.7 344.8 66.7 352 80 352c26.5 0 48-28.7 48-64s-21.5-64-48-64c-13.3 0-25.3 7.2-34 18.8C40.5 250.2 32.4 256 23.2 256C10.4 256 0 245.6 0 232.8V176c0-26.5 21.5-48 48-48H168.8c12.8 0 23.2-10.4 23.2-23.2z"/></svg></span>
+  </span>
+  <span class="dark:text-neutral-300">
+    <p>If the ODE on \(\widetilde{u}_n\) is well-posed, the following statements are equivalent:</p>
+<ul>
+<li>The method is of order \(q\) for linear problems;</li>
+<li>The modified vector field matches the initial one up to order \(q\), i.e. \(\frac{1}{h} \ln\bigl(r(h\lambda)\bigr) = \lambda + \mathcal{O}(h^q)\);</li>
+<li>The \(q\)-th first derivatives of \(\widetilde{u}_h\) at \(t = 0\) match those of the original equation.</li>
+</ul>
+  </span>
+</div>
+<!--  -->
+
+
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+  <span class="pe-3 text-primary-400">
+    <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+  </span>
+  <span class="dark:text-neutral-300">
+    <p><strong>Investigate</strong></p>
+<ol>
+<li>Check that these three properties are indeed satisfied for the above examples.</li>
+<li>For a two-stage explicit method of order 2, find the order condition \(b_1 + b_2 = 1\) and \(b_2 a_{12} = 1/2\).</li>
+<li>Try to prove this proposition!</li>
+</ol>
+  </span>
+</div>
+<details>
+<summary>Proof of the second property</summary>
+For the second property, a direct calculation yields
+$$ r(z) = 1 + z\begin{pmatrix} b_{1} & b_{2} \end{pmatrix} \begin{pmatrix} 1 & 0 \\ z a_{12} & 1 \end{pmatrix} \begin{pmatrix} 1 \\ 1 \end{pmatrix} = 1 + z(b_1 + b_2) + z^2 b_2 a_{12}, $$
+from which we obtain the truncated series expansion
+$$ \frac{1}{h}\ln\bigl(r(h\lambda)\bigr) = \lambda(b_{1}+b_{2}) + h\lambda b_{2}a_{12} - \frac{h\lambda}{2}(b_{1}+b_{2}) + \mathcal{O}(h^2). $$
+For the method to be of order 2, we need for all \(\lambda\)
+$$ \begin{cases}  \lambda(b_1 + b_2) = \lambda, \\ \lambda b_2 a_{12} - \frac{\lambda}{2}(b_1 + b_2) = 0, \end{cases} $$
+i.e. \(b_1 + b_2 = 1\) and \(b_2 a_{12} = 1/2\).
+</details>
+<h3 id="the-harmonic-oscillator" class="relative group">The harmonic oscillator <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-harmonic-oscillator" aria-label="Ancre">#</a></span></h3><p>In case of real data, i.e. \(u \in \mathbb{R}^2\), the previous multi-dimensional example involving \(J = \begin{pmatrix} 0 &amp; -1 \ 0 &amp; 1 \end{pmatrix}\) may be identified with the complex problem \(\dot z = iz\) with \(z = u_1 + {\rm i} u_2\). Applying the previous identities with \(\lambda = {\rm i}\), we find</p>
+<ul>
+<li><em>Explicit Euler:</em> \(\widetilde{\lambda}_h = \frac{1}{2h} \log(1 + h^2) + \frac{\rm i}{h}\arctan(h)\)</li>
+<li><em>Implicit Euler:</em> \(\widetilde{\lambda}_h = \frac{-1}{2h} \log(1 + h^2) + \frac{\rm i}{h}\arctan(h)\),</li>
+<li><em>Midpoint:</em> \(\widetilde{\lambda}_h = \frac{2{\rm i}}{h} \arctan(h/2)\).</li>
+</ul>
+<p>For explicit Euler, \(\Re(\widetilde{\lambda}_h) &gt; 0\), therefore the method <em>gains energy</em>, meaning in this case that the module increases over time. For implicit Euler, \(\Re(\widetilde{\lambda}_h) &lt; 0\) so the method <em>dissipates</em> energy. For the midpoint method \(\Re(\widetilde{\lambda}_h) = 0\), which indicates that energy is preserved.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> The method is said to be <em>symplectic</em>.</p>
+<p>We can also find the corrected coefficients, respectively \(\mu_h = \frac{1}{h}(e^{{\rm i}h}-1)\), \(\mu_h = \frac{1}{h}(1 - e^{-{\rm i}h})\) and \(\mu_h = \frac{2{\rm i}}{h} \tan(h/2)\). Again, only the midpoint method generates an imaginary coefficient.</p>
+<h3 id="the-multi-dimensional-case" class="relative group">The multi-dimensional case <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-multi-dimensional-case" aria-label="Ancre">#</a></span></h3><p>If \(Z := h\Lambda\) is an operator of a \(d\)-dimensional space, a correct way to write the stability function would be
+$$
+r(Z) = I_d + (I_d \otimes b^{\sf T}) \left( I_d \otimes I_s - Z \otimes A \right)^{-1} (Z \otimes \mathbb{1}_s)
+$$
+where \(\otimes\) is the Kronecker product, a useful tensor product for matrices.</p>
+
+
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+  <span class="pe-3 text-primary-400">
+    <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"/></svg>
+</span>
+  </span>
+  <span class="dark:text-neutral-300">
+    <strong>Why the tensor product?</strong><br>
+Given a Butcher tableau, the associated Runge-Kutta method is
+$$
+\begin{cases}
+k_1 = h \Lambda \left( u_n + a_{11} k_1 + \dots + a_{1s} k_s \right) \\
+\quad\vdots \\
+k_s = h \Lambda \left( u_n + a_{s1} k_1 + \dots + a_{ss} k_s \right)
+\end{cases}
+$$
+along with \(u_{n+1} = u_n + b_1 k_1 + &hellip; + b_s k_s\).
+The vectors \(k_i \in \mathbb{R}^d\) may be collected in a tensor \(\mathbf{k} \in \mathbb{R}^d \otimes \mathbb{R}^s\), and the fixed-point may then be written \((I_d \otimes I_s - h\Lambda \otimes A){\bf k} = (h\Lambda u_n) \otimes \mathbb{1}_s\). The second part contracts the \(\mathbb{R}^s\) part with \(u_{n+1} = u_n + (I_d \otimes b^{\sf T}) {\bf k}\), where \((I_d \otimes b^{\sf T}){\bf k}\) is identified from \(\mathbb{R}^d \otimes \mathbb{R}\) to \(\mathbb{R}^d\).
+  </span>
+</div>
+<p>This is cumbersome, so you&rsquo;ll hopefully understand why I suck with the simple 1d notations. Just in case, here are the expressions for some common methods.
+$$
+\begin{aligned}
+&amp;\text{Exp. midpoint} &amp;&amp; r(Z) = \operatorname{id} + Z \left( \operatorname{id} + {\textstyle\frac{1}{2}}Z \right) . \\ \\
+&amp;\text{Imp. midpoint} &amp;&amp; r(Z) = \left( \operatorname{id} - {\textstyle\frac{1}{2}} Z \right)^{-1} (\operatorname{id} + {\textstyle\frac{1}{2}} Z) \\ \\
+&amp; \text{RK4} &amp;&amp; r(Z) = \operatorname{id} + {\textstyle\frac{1}{6}}(K_1 + 2K_2 + 2K_3 + K_4 ) \\
+&amp;&amp;&amp; K_1 = Z,\ K_2 = Z \left( \operatorname{id} + {\textstyle\frac{1}{2}} K_1 \right),\ \\ &amp;&amp;&amp; K_3 = Z \left( \operatorname{id} + {\textstyle\frac{1}{2}} K_2 \right), K_4 = Z \left( \operatorname{id} + K_3 \right)
+\end{aligned}
+$$</p>
+<h2 id="reality-check" class="relative group">Reality check <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#reality-check" aria-label="Ancre">#</a></span></h2><h3 id="the-non-linear-case" class="relative group">The non-linear case <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-non-linear-case" aria-label="Ancre">#</a></span></h3><p>For a non-linear vector field, we must replace the exponential by the flow (morally, \(\varphi_h = e^{hf}\)), and there are now additional terms in the power series,
+$$
+\begin{aligned}
+\varphi_h &amp;= \operatorname{id} + hf + \frac{h^2}{2}f&rsquo;f + \frac{h^3}{6}\bigl[ f&rsquo;&rsquo;(f,f) + f&rsquo;f&rsquo;f \bigr] \\
+&amp;+ \frac{h^4}{4!} \left[ f^{(3)}(f, f, f) + 3f&rsquo;&rsquo;(f, f&rsquo;f) + f&rsquo;f&rsquo;&rsquo;(f,f) + f&rsquo;f&rsquo;f&rsquo;f \right] + \mathcal{O}(h^5) .
+\end{aligned}
+$$
+The computations become much more complex, and in general these series are purely formal, meaning that they diverge even for very small \(h\). Therefore the modified vector field \(\widetilde{f}_h\) and the corrected vector field \(g_h\) can only be computed up to some power of \(h\), and the methods may be inaccurate for large time-steps.</p>
+<h3 id="were-not-supposed-to-know-the-flow" class="relative group">We&rsquo;re not supposed to know the flow <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#were-not-supposed-to-know-the-flow" aria-label="Ancre">#</a></span></h3><p>Of course these are only examples to explain the reasoning of the method and why it has a chance to work. In practice, we do not know \(e^{h\lambda}\) (or its equivalent, the flow \(\varphi_h\) or \(e^{h\Lambda}\)), because if we did there would be no need for numerical methods. In the linear case, there is actually a lot of literature (which I&rsquo;m not familiar with) on computing accurate high-order approximation of matrix exponentials. I don&rsquo;t know if symplecticity is important for these applications.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>I won&rsquo;t discuss infinite dimension, i.e. PDEs, because everything is always more complicated for PDEs.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>In the multi-dimensional case \(\dot u = \Lambda u\), we may use the notation \(\ln(\mathrm{id} + h\Lambda) = \sum\limits_{n \geq 1} \frac{(-1)^{n+1}}{n}(h \Lambda)^n\), valid for \(h |\Lambda| &lt; 1\). For other cases, see for instance <a href="https://en.wikipedia.org/wiki/Logarithm_of_a_matrix" target="_blank" rel="noreferrer">the Wikipedia page</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>See e.g. E. Hairer, G. Wanner, <em>Solving ordinary differential equations II. Stiff and Differential-Algebraic Problems</em> (1996) &ndash; Sec. IV.3&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>In the generic non-linear case, the energy would be preserved up to a \(\mathcal{O}(h^2)\) term.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="https://tremelow.github.io/fr/blog/backward-error-analysis/01-motivating-bea/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >[EN] Motivating backward error analysis</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-02-28 21:29:05 &#43;0100 CET">28 février 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Faire défiler jusqu&#39;au bas de la page"
+            title="Faire défiler jusqu&#39;au bas de la page"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            &copy;
+            2025
+            Léopold Trémant
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Propulsé par <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
+</footer>
+
+    </div>
+  </body>
+</html>

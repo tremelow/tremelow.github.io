@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>[EN] A gentle introduction to backward error analysis on Léopold Trémant</title>
+    <link>https://tremelow.github.io/fr/blog/backward-error-analysis/</link>
+    <description>Recent content in [EN] A gentle introduction to backward error analysis on Léopold Trémant</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://tremelow.github.io/fr/blog/backward-error-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[EN] Linear backward error analysis</title>
+      <link>https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>[EN] Motivating backward error analysis</title>
+      <link>https://tremelow.github.io/fr/blog/backward-error-analysis/01-motivating-bea/</link>
+      <pubDate>Wed, 28 Feb 2024 21:29:05 +0100</pubDate>
+      <guid>https://tremelow.github.io/fr/blog/backward-error-analysis/01-motivating-bea/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

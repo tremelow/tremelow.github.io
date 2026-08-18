@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Video recommendations on Léopold Trémant</title>
-		<link>http://localhost:1313/fr/blog/video-recommendations/</link>
+		<link>https://tremelow.github.io/fr/blog/video-recommendations/</link>
 		<description>Recent content in Video recommendations on Léopold Trémant</description>
 		<generator>Hugo</generator>
 		<language>fr</language>
@@ -12,33 +12,33 @@
 		
 			<lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/fr/blog/video-recommendations/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://tremelow.github.io/fr/blog/video-recommendations/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Mihai Nica - Alice HH vs Bob HT</title>
-				<link>http://localhost:1313/fr/blog/video-recommendations/2024-05-17-hh-vs-ht/</link>
+				<link>https://tremelow.github.io/fr/blog/video-recommendations/2024-05-17-hh-vs-ht/</link>
 				<pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/fr/blog/video-recommendations/2024-05-17-hh-vs-ht/</guid>
+				<guid>https://tremelow.github.io/fr/blog/video-recommendations/2024-05-17-hh-vs-ht/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Nemean - Fast Inverse Square Root — A Quake III Algorithm</title>
-				<link>http://localhost:1313/fr/blog/video-recommendations/2024-03-18-inverse-sqrt/</link>
+				<link>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-18-inverse-sqrt/</link>
 				<pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/fr/blog/video-recommendations/2024-03-18-inverse-sqrt/</guid>
+				<guid>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-18-inverse-sqrt/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>sudgylacmoe -  A Swift Introduction to Geometric Algebra </title>
-				<link>http://localhost:1313/fr/blog/video-recommendations/2024-03-11-geometric-algebra/</link>
+				<link>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-11-geometric-algebra/</link>
 				<pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/fr/blog/video-recommendations/2024-03-11-geometric-algebra/</guid>
+				<guid>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-11-geometric-algebra/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Daria Ivanova - Affording a planet with geometry</title>
-				<link>http://localhost:1313/fr/blog/video-recommendations/2024-03-04-dewdrop-planet/</link>
+				<link>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-04-dewdrop-planet/</link>
 				<pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/fr/blog/video-recommendations/2024-03-04-dewdrop-planet/</guid>
+				<guid>https://tremelow.github.io/fr/blog/video-recommendations/2024-03-04-dewdrop-planet/</guid>
 				<description></description>
 			</item>
 	</channel>

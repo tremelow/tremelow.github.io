@@ -5,7 +5,7 @@
     
       <url>
             <loc>https://tremelow.github.io/fr/blog/</loc>
-            <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+            <lastmod>2024-11-22T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="en"
@@ -15,40 +15,6 @@
               rel="alternate"
               hreflang="fr"
               href="https://tremelow.github.io/fr/blog/"
-              />
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/fr/blog/bilingual-blog/</loc>
-            <lastmod>2026-08-18T00:00:00+00:00</lastmod>
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://tremelow.github.io/blog/bilingual-blog/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="fr"
-              href="https://tremelow.github.io/fr/blog/bilingual-blog/"
-              />
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/fr/</loc>
-            <lastmod>2026-08-18T00:00:00+00:00</lastmod>
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://tremelow.github.io/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="fr"
-              href="https://tremelow.github.io/fr/"
               />
           </url>
     
@@ -66,6 +32,23 @@
               rel="alternate"
               hreflang="fr"
               href="https://tremelow.github.io/fr/blog/gdt-eds-lml/"
+              />
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://tremelow.github.io/fr/</loc>
+            <lastmod>2024-11-22T00:00:00+00:00</lastmod>
+            <xhtml:link
+              rel="alternate"
+              hreflang="en"
+              href="https://tremelow.github.io/"
+              />
+            <xhtml:link
+              rel="alternate"
+              hreflang="fr"
+              href="https://tremelow.github.io/fr/"
               />
           </url>
     
@@ -141,7 +124,7 @@
     
       <url>
             <loc>https://tremelow.github.io/fr/blog/hugo-blog-setup/</loc>
-            <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+            <lastmod>2024-03-17T00:00:00+00:00</lastmod>
             <xhtml:link
               rel="alternate"
               hreflang="en"
@@ -168,23 +151,6 @@
               rel="alternate"
               hreflang="fr"
               href="https://tremelow.github.io/fr/blog/video-recommendations/2024-03-04-dewdrop-planet/"
-              />
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://tremelow.github.io/fr/blog/video-recommendations/</loc>
-            <lastmod>2024-03-04T00:00:00+00:00</lastmod>
-            <xhtml:link
-              rel="alternate"
-              hreflang="en"
-              href="https://tremelow.github.io/blog/video-recommendations/"
-              />
-            <xhtml:link
-              rel="alternate"
-              hreflang="fr"
-              href="https://tremelow.github.io/fr/blog/video-recommendations/"
               />
           </url>
     

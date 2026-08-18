@@ -2,9 +2,6 @@
 
 
 
-  
-
-
 
 
 <!doctype html>
@@ -44,8 +41,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="https://tremelow.github.io/css/main.bundle.min.419c08c90febf1eea3856dc0a2f6546a7f0412aa16d78ee78ae918dcd9d4ee63.css"
-    integrity="sha256-QZwIyQ/r8e6jhW3AovZUan8EEqoW147niukY3NnU7mM="
+    href="https://tremelow.github.io/css/main.bundle.min.2d2203dac0a5be571fd47cd7a336ad8c90e59fb9c4229cfd1e4ddd5b5051644b.css"
+    integrity="sha256-LSID2sClvlcf1HzXozatjJDln7nEIpz9Hk3dW1BRZEs="
   />
   
   
@@ -205,7 +202,7 @@
   
 
 
-  
+  <link rel="alternate" hreflang="fr" href="https://tremelow.github.io/fr/blog/hugo-blog-setup/" /><link rel="alternate" hreflang="en" href="https://tremelow.github.io/blog/hugo-blog-setup/" />
   
 </head>
 <body
@@ -265,6 +262,7 @@
                       title="À propos"
                       onclick="close_menu()"
                       
+                      
                       ><span
                           class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
                           >à propos</span
@@ -282,6 +280,7 @@
                       title="Publications"
                       onclick="close_menu()"
                       
+                      
                       ><span
                           class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
                           >travaux</span
@@ -298,6 +297,7 @@
                       href="/fr/blog/"
                       title="Articles de blog"
                       onclick="close_menu()"
+                      
                       
                       ><span
                           class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -369,49 +369,34 @@
           <div class="invisible w-full bg-transparent group-hover:visible"></div>
         
         <div
-          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible dark:border-neutral-600 dark:bg-neutral-800 ltr:right-0 rtl:left-0"
         >
           
           
-          
             
-            
-              
+              <div class="flex flex-grow">
                 
-                <div class="flex flex-grow">
-                  
-                    <a
-                      href="https://tremelow.github.io/blog/hugo-blog-setup/"
-                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
-                      >English</a
-                    >
-                  
-                </div>
-              
-            
-              
-            
-          
-            
-            
-              
-            
-              
+                  <a
+                    href="https://tremelow.github.io/blog/hugo-blog-setup/"
+                    class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                    >English</a
+                  >
                 
-                <div class="flex flex-grow">
-                  
-                    <a
-                      href="https://tremelow.github.io/fr/blog/hugo-blog-setup/"
-                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
-                      >Français<span
-                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
-                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+              </div>
+            
+              <div class="flex flex-grow">
+                
+                  <a
+                    href="https://tremelow.github.io/fr/blog/hugo-blog-setup/"
+                    class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                    >Français
+                    <span class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
 </span></span
-                      ></a
                     >
-                  
-                </div>
-              
+                  </a>
+                
+              </div>
             
           
         </div>
@@ -439,6 +424,7 @@
                   href="/fr/about/"
                   title="À propos"
                   
+                  
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
                       >à propos</span
@@ -455,6 +441,7 @@
                   href="/fr/work/"
                   title="Publications"
                   
+                  
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
                       >travaux</span
@@ -470,6 +457,7 @@
                 <a
                   href="/fr/blog/"
                   title="Articles de blog"
+                  
                   
                   ><span
                       class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
@@ -541,49 +529,34 @@
           <div class="invisible w-full bg-transparent group-hover:visible"></div>
         
         <div
-          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible ltr:right-0 rtl:left-0 dark:border-neutral-600 dark:bg-neutral-800"
+          class=" invisible absolute z-50 flex flex-col whitespace-nowrap rounded border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible dark:border-neutral-600 dark:bg-neutral-800 ltr:right-0 rtl:left-0"
         >
           
           
-          
             
-            
-              
+              <div class="flex flex-grow">
                 
-                <div class="flex flex-grow">
-                  
-                    <a
-                      href="https://tremelow.github.io/blog/hugo-blog-setup/"
-                      class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
-                      >English</a
-                    >
-                  
-                </div>
-              
-            
-              
-            
-          
-            
-            
-              
-            
-              
+                  <a
+                    href="https://tremelow.github.io/blog/hugo-blog-setup/"
+                    class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                    >English</a
+                  >
                 
-                <div class="flex flex-grow">
-                  
-                    <a
-                      href="https://tremelow.github.io/fr/blog/hugo-blog-setup/"
-                      class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
-                      >Français<span
-                        class="ms-2 w-6 text-primary-600 dark:text-primary-400"
-                        ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+              </div>
+            
+              <div class="flex flex-grow">
+                
+                  <a
+                    href="https://tremelow.github.io/fr/blog/hugo-blog-setup/"
+                    class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
+                    >Français
+                    <span class="ms-2 w-6 text-primary-600 dark:text-primary-400"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
 </span></span
-                      ></a
                     >
-                  
-                </div>
-              
+                  </a>
+                
+              </div>
             
           
         </div>

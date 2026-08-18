@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Fri, 22 Nov 2024 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://tremelow.github.io/fr/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Bilingual features of this blog</title>
+				<link>https://tremelow.github.io/fr/blog/bilingual-blog/</link>
+				<pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>https://tremelow.github.io/fr/blog/bilingual-blog/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Équations différentielles stochastiques et modèles de diffusion (groupe de travail)</title>
 				<link>https://tremelow.github.io/fr/blog/gdt-eds-lml/</link>
@@ -49,7 +56,7 @@
 				<description></description>
 			</item>
 			<item>
-				<title>[EN] Making my website using Hugo</title>
+				<title>Making my website using Hugo</title>
 				<link>https://tremelow.github.io/fr/blog/hugo-blog-setup/</link>
 				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
 				<guid>https://tremelow.github.io/fr/blog/hugo-blog-setup/</guid>
@@ -63,14 +70,14 @@
 				<description></description>
 			</item>
 			<item>
-				<title>[EN] Linear backward error analysis</title>
+				<title>Linear backward error analysis</title>
 				<link>https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/</link>
 				<pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
 				<guid>https://tremelow.github.io/fr/blog/backward-error-analysis/02-linear-bea/</guid>
 				<description></description>
 			</item>
 			<item>
-				<title>[EN] Motivating backward error analysis</title>
+				<title>Motivating backward error analysis</title>
 				<link>https://tremelow.github.io/fr/blog/backward-error-analysis/01-motivating-bea/</link>
 				<pubDate>Wed, 28 Feb 2024 21:29:05 +0100</pubDate>
 				<guid>https://tremelow.github.io/fr/blog/backward-error-analysis/01-motivating-bea/</guid>
